@@ -59,7 +59,7 @@ public class ExtractoEmpresarialReportDTO {
     private String mpaNombrePlanEmpresarial;
     private List<MpaTableDTO> mpaTable;
 
-    private List<RmppTableDTO> rmpTable;
+    private List<RmpTableDTO> rmpTable;
 
     private String consultorNombre;
     private String consultorCiudad;

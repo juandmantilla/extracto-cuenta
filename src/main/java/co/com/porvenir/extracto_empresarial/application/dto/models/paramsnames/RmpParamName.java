@@ -6,8 +6,7 @@ import lombok.Getter;
 public enum RmpParamName {
 
     RMP_COLLECTION_TABLE("rmp_collection_table"),
-
-    RMP_SUBREPORT("rmp_collection_table"),
+    RMP_SUBREPORT("rmp_subreport"),
     RMP_DATA_SOURCE("rmp_data_source"),
     RMP_PARAMS("rmp_subreport_parameters");
 

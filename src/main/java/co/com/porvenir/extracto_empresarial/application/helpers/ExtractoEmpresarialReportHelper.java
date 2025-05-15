@@ -17,7 +17,8 @@ import java.util.Map;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IdeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IggeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.MpaParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.RMP_COLLECTION_TABLE;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.RMP_SUBREPORT;
 import static co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages.ReponseMessage.INTERNAL_SERVER_ERROR;
 
 @Slf4j
@@ -69,7 +70,6 @@ public class ExtractoEmpresarialReportHelper {
     private static void buildIggeParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
 
         var jasperSubreport = getSubreport(IGGE_SUBREPORT_NAME);
-        var dataSource = new JRBeanCollectionDataSource(report.getIggeTable());
 
         params.put(IGGE_NIT_EMPRESARIAL.getParamName(), report.getNitEmpresarial());
         params.put(IGGE_TOTAL_SALDO_ANTERIOR.getParamName(), report.getIggeTotalSaldoAnterior());
@@ -86,16 +86,14 @@ public class ExtractoEmpresarialReportHelper {
         params.put(IGGE_ENTIDAD_PATROCINADORA.getParamName(), report.getIggeEntidadPatrocinadora());
         params.put(IGGE_CIUDAD_DEPTO.getParamName(), report.getIggeCiudadDepto());
         params.put(IGGE_DIRECCION.getParamName(), report.getIggeDireccion());
-        params.put(IGGE_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getIggeTable()));
 
         params.put(IGGE_SUBREPORT_PARAM.getParamName(), jasperSubreport);
-        params.put(IGGE_DATA_SOURCE.getParamName(), dataSource);
+        params.put(IGGE_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource((report.getIggeTable())));
     }
 
     private static void buildIdeParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
 
         var jasperSubreport = getSubreport(IDE_SUBREPORT_NAME);
-        var dataSource = new JRBeanCollectionDataSource(report.getIdeTable());
 
         params.put(IDE_APORTES.getParamName(), report.getIdeAportes());
         params.put(IDE_RETIROS.getParamName(), report.getIdeRetiros());
@@ -108,37 +106,32 @@ public class ExtractoEmpresarialReportHelper {
         params.put(IDE_FONDO.getParamName(), report.getIdeFondo());
         params.put(IDE_RENTA_ACUMULADA.getParamName(), report.getIdeRentaAcumulada());
         params.put(IDE_SALDO_ANTERIOR.getParamName(), report.getIdeSaldoAnterior());
-        params.put(IDE_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getIdeTable()));
+
 
         params.put(IDE_SUBREPORT.getParamName(), jasperSubreport);
-        params.put(IDE_DATA_SOURCE.getParamName(), dataSource);
+        params.put(IDE_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getIdeTable()));
     }
 
     private static void buildMpaParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
 
         var jasperSubreport = getSubreport(MPA_SUBREPORT_NAME);
-        var dataSource = new JRBeanCollectionDataSource(report.getMpaTable());
 
         params.put(MPA_NIT.getParamName(), report.getMpaNit());
         params.put(MPA_MONTO_PROCESO.getParamName(), report.getMpaMontoProceso());
         params.put(MPA_NIT_TOTAL.getParamName(), report.getMpaNitTotal());
         params.put(MPA_TOTAL_MONTO_PROCESO.getParamName(), report.getMpaTotalMontoProceso());
         params.put(MPA_NOMBRE_PLAN_EMPRESARIAL.getParamName(), report.getMpaNombrePlanEmpresarial());
-        params.put(MPA_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getMpaTable()));
 
         params.put(MPA_SUBREPORT.getParamName(), jasperSubreport);
-        params.put(MPA_DATA_SOURCE.getParamName(), dataSource);
+        params.put(MPA_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getMpaTable()));
     }
 
     private static void buildRmpParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
 
         var jasperSubreport = getSubreport(RMP_SUBREPORT_NAME);
-        var dataSource = new JRBeanCollectionDataSource(report.getRmpTable());
-
-        params.put(RMP_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getRmpTable()));
 
         params.put(RMP_SUBREPORT.getParamName(), jasperSubreport);
-        params.put(RMP_DATA_SOURCE.getParamName(), dataSource);
+        params.put(RMP_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getRmpTable()));
     }
 
     private static JasperReport getSubreport(String subreportName) {
