@@ -17,8 +17,7 @@ import java.util.Map;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IdeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IggeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.MpaParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.RMP_DATA_SOURCE;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.RMP_SUBREPORT;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages.ReponseMessage.INTERNAL_SERVER_ERROR;
 
 @Slf4j
@@ -108,6 +107,7 @@ public class ExtractoEmpresarialReportHelper {
         params.put(IDE_PLAN.getParamName(), report.getIdePlan());
         params.put(IDE_FONDO.getParamName(), report.getIdeFondo());
         params.put(IDE_RENTA_ACUMULADA.getParamName(), report.getIdeRentaAcumulada());
+        params.put(IDE_SALDO_ANTERIOR.getParamName(), report.getIdeSaldoAnterior());
         params.put(IDE_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getIdeTable()));
 
         params.put(IDE_SUBREPORT.getParamName(), jasperSubreport);
@@ -134,6 +134,8 @@ public class ExtractoEmpresarialReportHelper {
 
         var jasperSubreport = getSubreport(RMP_SUBREPORT_NAME);
         var dataSource = new JRBeanCollectionDataSource(report.getRmpTable());
+
+        params.put(RMP_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getRmpTable()));
 
         params.put(RMP_SUBREPORT.getParamName(), jasperSubreport);
         params.put(RMP_DATA_SOURCE.getParamName(), dataSource);

@@ -12,6 +12,7 @@ public enum IdeParamName {
     IDE_TRASLADOS_PORTAFOLIOS("ide_traslados_portafolios"),
     IDE_VALORIZACION("ide_valorizacion"),
     IDE_SALDO_FINAL("ide_saldo_final"),
+    IDE_SALDO_ANTERIOR("ide_saldo_anterior"),
     IDE_SALDO_RESTRINGIDO("ide_saldo_restringido"),
     IDE_COMISION_COBRADA("ide_comision_cobrada"),
     IDE_PLAN("ide_plan"),

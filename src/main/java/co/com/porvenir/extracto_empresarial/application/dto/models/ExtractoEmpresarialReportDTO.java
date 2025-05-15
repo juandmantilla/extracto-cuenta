@@ -39,7 +39,7 @@ public class ExtractoEmpresarialReportDTO {
     private String iggeDireccion;
     private List<IggeTableDTO> iggeTable;
 
-
+    private String ideSaldoAnterior;
     private String ideAportes;
     private String ideRetiros;
     private String ideTrasladosPortafolios;
