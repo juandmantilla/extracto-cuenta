@@ -1,0 +1,488 @@
+<!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
+<jasperReport name="informacion general grupo empresarial" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1a2daf9-d57f-4597-a632-01f2e76e8798">
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="965"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="24"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#C7E2E9">
+		<pen lineStyle="Solid" lineColor="#FFFFFF"/>
+		<box>
+			<pen lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#C7E2E9" fontName="SansSerif" fontSize="7.0" bold="true">
+		<pen lineWidth="0.5" lineStyle="Solid" lineColor="rgba(255, 255, 255, 0.0)"/>
+		<box>
+			<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF" hTextAlign="Right" fontName="SansSerif" fontSize="6.0">
+		<pen lineColor="rgba(255, 255, 255, 0.0)"/>
+		<box>
+			<pen lineStyle="Solid"/>
+			<topPen lineWidth="0.5" lineColor="rgba(150, 5, 3, 0.0)"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+		<paragraph lineSpacingSize="1.2"/>
+	</style>
+	<dataset name="Dataset" uuid="28f85381-2086-4c56-9e44-ea1a5cd5d041">
+		<query language="sql"><![CDATA[]]></query>
+		<field name="objetivoPlanEmpresarial" class="java.lang.String"/>
+		<field name="saldoAnterior" class="java.lang.String"/>
+		<field name="aportes" class="java.lang.String"/>
+		<field name="retiros" class="java.lang.String"/>
+		<field name="trasladoEntreObjetivos" class="java.lang.String"/>
+		<field name="valorizacion" class="java.lang.String"/>
+		<field name="saldoFinal" class="java.lang.String"/>
+		<field name="saldoRestringido" class="java.lang.String"/>
+		<field name="comisionCobrada" class="java.lang.String"/>
+	</dataset>
+	<parameter name="igge_nit_empresarial" class="java.lang.String">
+		<description><![CDATA[nit grupo empresarial]]></description>
+	</parameter>
+	<parameter name="igge_total_saldo_anterior" class="java.lang.String"/>
+	<parameter name="igge_total_aportes" class="java.lang.String"/>
+	<parameter name="igge_total_retiros" class="java.lang.String"/>
+	<parameter name="igge_total_traslados" class="java.lang.String"/>
+	<parameter name="igge_total_valorizacion" class="java.lang.String"/>
+	<parameter name="igge_total_saldo_final" class="java.lang.String"/>
+	<parameter name="igge_total_saldo_restringido" class="java.lang.String"/>
+	<parameter name="igge_total_comision_cobrada" class="java.lang.String"/>
+	<parameter name="igge_numero_participes" class="java.lang.String"/>
+	<parameter name="igge_nit_plan" class="java.lang.String"/>
+	<parameter name="igge_nic" class="java.lang.String"/>
+	<parameter name="igge_direccion" class="java.lang.String"/>
+	<parameter name="igge_entidad_patrocinadora" class="java.lang.String"/>
+	<parameter name="igge_ciudad_depto" class="java.lang.String"/>
+	<parameter name="igge_collection_table" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<query language="sql"><![CDATA[]]></query>
+	<background splitType="Stretch"/>
+	<columnHeader height="70" splitType="Stretch">
+		<element kind="frame" uuid="f01ef1e0-a49a-4fb0-9585-3c046acdad21" x="0" y="0" width="554" height="20">
+			<property name="com.jaspersoft.studio.element.name" value="datos empresa"/>
+			<element kind="textField" uuid="2a29a2e2-3aea-43cf-ad5e-245874800153" x="0" y="0" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA["NIT /No. DE PLAN: "]]></expression>
+			</element>
+			<element kind="textField" uuid="03332e74-51d4-44b2-8b09-942aa713f5dc" x="0" y="10" width="60" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA["DIRECCIÓN: "]]></expression>
+			</element>
+			<element kind="textField" uuid="16714e25-619e-4aba-b021-8a92d15b1e0e" x="310" y="0" width="120" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA["ENTIDAD PATROCINADORA : "]]></expression>
+			</element>
+			<element kind="textField" uuid="c4077eaa-bac1-4a02-9977-062b2d125a50" x="310" y="10" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA["CIUDAD / DEPTO : "]]></expression>
+			</element>
+			<element kind="textField" uuid="a2d53aec-bb60-4b06-888d-5ee79e9e6782" x="180" y="0" width="20" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA["NIC: "]]></expression>
+			</element>
+			<element kind="textField" uuid="095acd15-f8cf-48d3-ac53-bbf74ae89dc3" x="80" y="0" width="70" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA[$P{igge_nit_plan}]]></expression>
+			</element>
+			<element kind="textField" uuid="348e2f45-99e3-412f-9911-0ce9be0cdda3" x="60" y="10" width="70" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA[$P{igge_direccion}]]></expression>
+			</element>
+			<element kind="textField" uuid="fe625d50-8886-416a-8f3a-b7c434e61854" x="200" y="0" width="100" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA[$P{igge_nic}]]></expression>
+			</element>
+			<element kind="textField" uuid="93b4a94f-ce9f-4cc9-904a-e5fa5ecbd734" x="430" y="0" width="124" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA[$P{igge_entidad_patrocinadora}]]></expression>
+			</element>
+			<element kind="textField" uuid="1dea490f-8882-43cf-8426-5f4cf5a2d515" x="390" y="10" width="70" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+				<paragraph lineSpacingSize="1.2"/>
+				<expression><![CDATA[$P{igge_ciudad_depto}]]></expression>
+			</element>
+		</element>
+		<element kind="frame" uuid="697f0ea3-42ca-4e24-9b0b-c793a39bfdaa" x="0" y="30" width="555" height="20">
+			<property name="com.jaspersoft.studio.element.name" value="titulo informacion general grupo empresarial"/>
+			<element kind="rectangle" uuid="4380b61e-047f-450b-86fb-b6b60dfc310a" x="0" y="0" width="555" height="20" backcolor="#CCE3EA">
+				<pen lineColor="rgba(0, 0, 0, 0.0)"/>
+			</element>
+			<element kind="staticText" uuid="c43ed524-f5e0-4fa9-8bb9-7d4b79c0ac7d" x="171" y="0" width="212" height="20" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Información General del Grupo Empresarial]]></text>
+			</element>
+		</element>
+		<element kind="frame" uuid="70507e05-2d6d-42a6-9bb4-6a8444ec54b2" x="0" y="50" width="555" height="20">
+			<element kind="rectangle" uuid="96523873-1e98-4c69-a3b7-dc000f4a2a3c" x="0" y="0" width="280" height="20" backcolor="#DEEDF1">
+				<pen lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="ab8f38b4-bd98-4803-a0d6-9d978a9cdca4" x="280" y="0" width="275" height="20" backcolor="#DEEDF1">
+				<pen lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="3efca8bc-34c8-46ec-b604-22564ff8ee2b" x="0" y="0" width="280" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Codigo o Nit del Grupo Empresarial]]></text>
+				<box>
+					<pen lineColor="rgba(255, 255, 255, 0.0)"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="8e4c4fed-afae-4593-ae87-21d792d4e2b1" x="280" y="0" width="275" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{igge_nit_empresarial}]]></expression>
+				<box>
+					<pen lineColor="rgba(255, 255, 255, 0.0)"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</element>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<element kind="component" uuid="c58f38bc-d350-4f6a-8321-ec75e25c1f0d" x="0" y="0" width="555" height="50" printRepeatedValues="false">
+				<component kind="table">
+					<datasetRun uuid="078f9969-d7b4-43ea-9529-dd188a74c6b5" subDataset="Dataset">
+						<dataSourceExpression><![CDATA[$P{igge_collection_table}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="fb9bd774-7cfe-4e91-a4de-844b89802818" width="61">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="4d2f60df-12de-4fb2-9eae-32ed0118add3" mode="Transparent" x="0" y="0" width="61" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Objetivos plan
+Empresarial]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="d14c4638-e39d-423c-8434-07d4681bb7e3" x="0" y="0" width="61" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{objetivoPlanEmpresarial}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<pen lineColor="rgba(255, 255, 255, 0.0)"/>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="ae836a1e-f56f-4713-a0f0-9f5a169190a6" width="61">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="5a606a25-e0ea-4ad9-9d25-8dd0ed105c79" mode="Transparent" x="0" y="0" width="61" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Saldo Anterior]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="f7833cff-8dc2-44b9-8ada-584604025825" x="0" y="0" width="61" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{saldoAnterior}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="7197e33e-64b7-4394-86b2-3deb1b1b38bf" width="62">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="2f98cbf8-6fb4-4dd7-8e6c-8e085a221e6c" mode="Transparent" x="0" y="0" width="62" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Aportes]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="e1b5c5a6-8f2a-48a0-a2d2-3230f824f79c" x="0" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{aportes}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="338174ba-d6e7-4af7-bd2f-8626389f51ac" width="62">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="21ad9d15-8cac-43e5-bdea-8fb02df1f651" mode="Transparent" x="0" y="0" width="62" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Retiros]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="27228a35-d357-4d57-b6cb-561bedaa9ec9" x="0" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{retiros}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="ca9315cc-ae8c-47c5-a538-84bf4dff4cbe" width="62">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="9a51544d-6f10-457c-a902-1cd7285bb3b5" mode="Transparent" x="0" y="0" width="62" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Traslados entre Objetivos]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="577787df-25b3-49aa-b35d-5bdae7458cb8" x="0" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{trasladoEntreObjetivos}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+					<column kind="single" uuid="dc1f45e3-c0ca-45c5-83d8-72e26576a489" width="61">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="6b59e0d7-7b47-40a4-8320-27626855f56b" mode="Transparent" x="0" y="0" width="61" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Valorización]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="3b9279d5-b998-44dc-8a6f-55eb05fd433d" x="0" y="0" width="61" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{valorizacion}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+					</column>
+					<column kind="single" uuid="cb454453-4ac9-48db-9394-5cf8b2d96444" width="62">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="2128bf7f-278d-4405-964f-cadada02a288" mode="Transparent" x="0" y="0" width="62" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Saldo Final]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="3c16ff5a-de8d-4916-b293-6e975b902b2c" x="0" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{saldoFinal}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+					</column>
+					<column kind="single" uuid="388f5a7e-8b6c-4f91-b356-4feb0aac2333" width="62">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="5d454dbd-d17e-465d-9c32-4a787820932a" mode="Transparent" x="0" y="0" width="62" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Saldo Restringido]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="5d71e81c-b470-4888-964e-8fe3c6ff4007" x="0" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{saldoRestringido}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+					</column>
+					<column kind="single" uuid="86f7f5ea-401b-4a0e-82c7-64ef44757b86" width="62">
+						<columnHeader height="30" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="e4ac8663-d30e-4fda-a558-45fe9f2d0a00" mode="Transparent" x="0" y="0" width="62" height="30" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[Comisión Cobrada]]></text>
+								<box>
+									<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+							</element>
+						</columnHeader>
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="a526b9c9-0af2-492c-8dbc-8de2db5af843" x="0" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{comisionCobrada}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+			</element>
+		</band>
+	</detail>
+	<summary height="41">
+		<element kind="frame" uuid="6d3a56ad-9f71-48ba-98ea-db919c1dbce3" mode="Opaque" x="0" y="0" width="555" height="41">
+			<property name="com.jaspersoft.studio.element.name" value="footer"/>
+			<element kind="rectangle" uuid="64b0608b-c940-4f10-af86-b635b5be3f07" mode="Opaque" x="0" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="fb8dacf5-5027-4c75-a0b6-973bf1aeb7ca" mode="Opaque" x="62" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="19a27954-9142-45ae-860d-a08cdeeafa26" mode="Opaque" x="124" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="5580f9f3-5b38-4712-b869-dea7872a1f09" mode="Opaque" x="186" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="5a4d8e61-9628-4fe3-aadc-f3cfc2ea9bf3" mode="Opaque" x="248" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="30216671-aab2-4557-aef2-7ab712f8f762" mode="Opaque" x="310" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="6ae5e2a7-5cae-428e-82d4-3e1046026329" mode="Opaque" x="372" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="72e9a5fc-0191-495d-bd10-564461ac4f06" mode="Opaque" x="434" y="0" width="62" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="98825f1b-2058-443a-8294-b800318657fa" mode="Opaque" x="496" y="0" width="59" height="20" backcolor="#DFEEF2">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="cbb9e066-a8ef-48f4-96cd-8df45a65ed79" mode="Opaque" x="0" y="20" width="310" height="21" backcolor="#DFEEF2">
+				<pen lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="textField" uuid="e688240e-0b2b-4223-bf23-f8c3f3c90a50" mode="Transparent" x="63" y="0" width="61" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_saldo_anterior}]]></expression>
+				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+			</element>
+			<element kind="textField" uuid="c76c585a-9191-4100-a1c3-3892795d53e2" mode="Transparent" x="125" y="0" width="61" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_aportes}]]></expression>
+			</element>
+			<element kind="textField" uuid="f679832a-7fe3-4a8b-9d41-930d797bc8b2" mode="Transparent" x="187" y="0" width="61" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_retiros}]]></expression>
+			</element>
+			<element kind="textField" uuid="58d786d8-722a-4431-aab6-e3a008d9f81a" mode="Transparent" x="248" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_traslados}]]></expression>
+			</element>
+			<element kind="textField" uuid="fee108f8-5cb9-4dae-a8cf-01113d317d70" mode="Transparent" x="310" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_valorizacion}]]></expression>
+			</element>
+			<element kind="textField" uuid="60844413-47c0-45b9-bc7c-b72bd8bc1fbe" mode="Transparent" x="372" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_saldo_final}]]></expression>
+			</element>
+			<element kind="textField" uuid="88470a55-f269-4d91-9346-da1f0d4145cb" mode="Transparent" x="434" y="0" width="62" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_saldo_restringido}]]></expression>
+			</element>
+			<element kind="textField" uuid="dd4f0f5c-b7a4-47eb-99c6-21d0247b5269" mode="Transparent" x="496" y="0" width="59" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+				<paragraph rightIndent="3"/>
+				<expression><![CDATA[$P{igge_total_comision_cobrada}]]></expression>
+			</element>
+			<element kind="staticText" uuid="7fa9ea70-c495-4128-afb2-b823ef1f42ab" mode="Transparent" x="0" y="0" width="62" height="20" fontSize="6.0" bold="false" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Total]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="16daec58-6799-4112-8b8c-39302c0074e0" mode="Transparent" x="0" y="20" width="310" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[No. de Partícipes]]></text>
+			</element>
+			<element kind="rectangle" uuid="966e2d42-f134-43b6-830b-b5c72cc7e277" mode="Opaque" x="310" y="20" width="245" height="21" backcolor="#DFEEF2">
+				<pen lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="textField" uuid="e6ddab7d-73d7-4f9e-b79d-3bf8d891fcae" mode="Transparent" x="310" y="20" width="245" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{igge_numero_participes}]]></expression>
+			</element>
+		</element>
+	</summary>
+</jasperReport>

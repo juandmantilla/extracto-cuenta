@@ -1,0 +1,342 @@
+<!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
+<jasperReport name="monto proceso de acreditacion" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4d77cbed-b175-4f21-8988-664f8e2212ec">
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF" hTextAlign="Center" fontName="Arial" fontSize="6.0">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<dataset name="MpaDataSet" uuid="fe941e9d-81a4-450b-86e2-7e8e331d2074">
+		<query language="sql"><![CDATA[]]></query>
+		<field name="codigoObjetivo" class="java.lang.String"/>
+		<field name="nombreObjetivo" class="java.lang.String"/>
+		<field name="tipoAporte" class="java.lang.String"/>
+		<field name="realizaAporte" class="java.lang.String"/>
+		<field name="aporteTieneCondicion" class="java.lang.String"/>
+		<field name="montAporteTipoValor" class="java.lang.String"/>
+		<field name="montAporteValor" class="java.lang.String"/>
+		<field name="periodicidad" class="java.lang.String"/>
+		<field name="permiteRetiros" class="java.lang.String"/>
+		<field name="reqAutorizacionRetiros" class="java.lang.String"/>
+		<field name="permiteTrasladoPortafolios" class="java.lang.String"/>
+		<field name="permiteBloqueoEntidades" class="java.lang.String"/>
+	</dataset>
+	<parameter name="mpa_nit" class="java.lang.String"/>
+	<parameter name="mpa_monto_proceso" class="java.lang.String"/>
+	<parameter name="mpa_nit_total" class="java.lang.String"/>
+	<parameter name="mpa_total_monto_proceso" class="java.lang.String"/>
+	<parameter name="mpa_nombre_plan_empresarial" class="java.lang.String"/>
+	<parameter name="mpa_collection_table" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<query language="sql"><![CDATA[]]></query>
+	<background splitType="Stretch"/>
+	<title height="20" splitType="Stretch">
+		<element kind="rectangle" uuid="04b396c9-3c6e-4100-ace5-5798fc9e52bf" x="0" y="0" width="555" height="20" backcolor="#CCE3EA">
+			<pen lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.0)"/>
+		</element>
+		<element kind="staticText" uuid="bbb5401a-4f31-4bcf-8696-1575c6addd58" x="180" y="0" width="200" height="20" fontName="Arial" fontSize="9.0" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Monto en Proceso de Acreditación]]></text>
+		</element>
+	</title>
+	<pageHeader height="49" splitType="Stretch">
+		<element kind="frame" uuid="e8178e3b-330d-4377-ad4f-48c5728be0d3" x="0" y="1" width="555" height="14">
+			<property name="com.jaspersoft.studio.element.name" value="nit &amp; monto proceso"/>
+			<element kind="rectangle" uuid="9d69f3c5-995d-4b5d-b69a-396c653c25e7" x="0" y="0" width="279" height="14" backcolor="#CCE3EA">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="cb0e465e-793a-46aa-a9be-a23cf727c930" x="280" y="0" width="275" height="14" backcolor="#CCE3EA">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="b0e168a3-8aac-4d6f-a726-fe33b7dae4cc" x="0" y="0" width="280" height="14" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[NIT]]></text>
+			</element>
+			<element kind="staticText" uuid="620b4631-5a86-4b2d-9fc7-e6c0fe17b0fe" x="281" y="0" width="274" height="14" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Monto en Proceso]]></text>
+			</element>
+			<element kind="textField" uuid="5d209181-44bf-4092-9fc9-6b06c279537b" x="0" y="14" width="280" height="15" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{mpa_nit}]]></expression>
+			</element>
+			<element kind="textField" uuid="44e2000d-c03b-4a5f-98ce-0d98ab921c65" x="280" y="14" width="275" height="15" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{mpa_monto_proceso}]]></expression>
+			</element>
+			<element kind="rectangle" uuid="8b2057fc-7839-4e96-b3c3-3641df87f477" x="280" y="30" width="275" height="11" backcolor="#DFEEF2">
+				<pen lineWidth="0.25" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="a5772ba4-a948-4069-a6ff-85ef530cde1b" x="0" y="30" width="80" height="11" backcolor="#DFEEF2">
+				<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="0348bc9e-3990-4e3b-86d5-e00ee36fc339" x="80" y="30" width="200" height="11" backcolor="#DFEEF2">
+				<pen lineWidth="0.25" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="973e8421-85ec-45e3-b156-6fcbb080502b" x="0" y="30" width="80" height="11" fontName="Arial" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Total]]></text>
+			</element>
+			<element kind="textField" uuid="736e8ab5-9ac3-4a09-8f7f-e127333413f9" x="80" y="30" width="199" height="11" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{mpa_nit_total}]]></expression>
+			</element>
+			<element kind="textField" uuid="246c67a5-2c5a-4640-8c32-2fcc0dd9bb0c" x="280" y="30" width="275" height="11" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{mpa_total_monto_proceso}]]></expression>
+			</element>
+		</element>
+	</pageHeader>
+	<columnHeader height="88" splitType="Stretch">
+		<element kind="frame" uuid="abe073d9-4af2-40d9-a8a0-5d55c60e86b7" x="0" y="48" width="555" height="40">
+			<property name="com.jaspersoft.studio.element.name" value="Cabeceras tabla"/>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<element kind="frame" uuid="0f3b4741-e846-4ca0-afb3-7724d814e81d" x="45" y="0" width="85" height="40">
+				<property name="com.jaspersoft.studio.element.name" value="nombre objetivo"/>
+				<element kind="rectangle" uuid="6bb948e0-e598-4cd7-aafd-67242bd1562c" x="0" y="0" width="85" height="40" backcolor="#C7E2E9">
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</element>
+				<element kind="staticText" uuid="2632e89a-eebb-4ac7-9cf0-0f409d583e7e" x="0" y="0" width="85" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+					<text><![CDATA[Nombre del Objetivo]]></text>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</element>
+			</element>
+			<element kind="frame" uuid="50b31498-a39f-4328-b4fa-77823e89744c" x="130" y="0" width="41" height="40">
+				<property name="com.jaspersoft.studio.element.name" value="tipo aporte"/>
+				<element kind="rectangle" uuid="a3105852-b4cc-4358-ac3d-e1c822052305" x="0" y="0" width="41" height="40" backcolor="#C7E2E9">
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</element>
+				<element kind="staticText" uuid="9d88227a-3877-4ec1-84c7-747e680dc84d" x="0" y="0" width="41" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+					<text><![CDATA[Tipo Aporte]]></text>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</element>
+			</element>
+			<element kind="frame" uuid="f7b01495-2375-4dc9-9272-f54e651d1941" x="171" y="0" width="41" height="40">
+				<property name="com.jaspersoft.studio.element.name" value="realiza aporte"/>
+				<element kind="rectangle" uuid="85a378f6-b4fd-4c64-9096-08b6bf9986bc" x="0" y="0" width="41" height="40" backcolor="#C7E2E9">
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</element>
+				<element kind="staticText" uuid="f039d6f3-4617-4932-8ed0-f5edd3677775" x="0" y="0" width="41" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+					<text><![CDATA[Realiza aporte]]></text>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</element>
+			</element>
+			<element kind="frame" uuid="77fa505e-198c-4350-be00-31752b9631e7" x="212" y="0" width="39" height="40">
+				<property name="com.jaspersoft.studio.element.name" value="aporte condición"/>
+				<element kind="rectangle" uuid="840b7663-9f87-43d7-ab97-d0b836a960a9" x="0" y="0" width="39" height="40" backcolor="#C7E2E9">
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</element>
+				<element kind="staticText" uuid="5cbf8a04-1f16-4c85-8f3a-133fc84add93" x="0" y="0" width="39" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+					<text><![CDATA[Aporte tiene Condición]]></text>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</element>
+			</element>
+			<element kind="rectangle" uuid="26a92f91-53c4-4db9-9b24-4b4772c99226" x="251" y="0" width="72" height="20" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="aa51627b-e889-4183-b09e-61c461267465" x="251" y="0" width="72" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Monto Aporte]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="5e5ea02c-bf24-47e5-a90b-923e71f64f76" x="251" y="20" width="25" height="20" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="8af1d887-f6f9-47c8-b2ac-19f6d53c9e35" x="251" y="20" width="25" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Tipo Valor]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="b55d1023-a92f-41d4-b1ed-9aed8ba6f26e" x="276" y="20" width="47" height="20" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="e67610d0-efea-48b3-a13b-193b1538cc01" x="276" y="20" width="47" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Valor]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="15662a61-7d88-4230-893f-9c1369146aba" x="323" y="0" width="47" height="40" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="336a4014-d683-49e9-a8eb-27ba30116cfb" x="323" y="0" width="47" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Periodicidad]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="e1983e70-3e7d-4030-8a26-622ce2b0a5ef" x="370" y="0" width="47" height="40" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="5d5c517b-7ddd-4373-a5f8-6f68ba0268f7" x="370" y="0" width="47" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Permite Retiros]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="c684c609-9493-4653-ae70-29249a8fb226" x="417" y="0" width="46" height="40" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="ae21c3fa-8cac-49d1-b6f3-b6e36f9f2ece" x="417" y="0" width="46" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Requiere Autorización para Retiros]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="9e03d1b8-e516-43e2-af94-44beaf6185f5" x="463" y="0" width="45" height="40" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="0ae053fd-4288-42c8-be39-310577829ace" x="463" y="0" width="45" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Permite Traslado entre Portafolios]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="20b6087c-592a-4495-af2e-9277b2aeb546" x="508" y="0" width="47" height="40" backcolor="#C7E2E9">
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="f106e7fe-9d60-4a1c-b5e0-a4d285a55206" x="508" y="0" width="47" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Permite Bloqueo a Entidades]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="19b919b2-09f2-4874-b082-4947c35889df" x="0" y="0" width="45" height="40" backcolor="#C7E2E9">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="358dd943-1e22-4e1e-926e-e83fb3491879" x="0" y="0" width="45" height="40" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Código del Objetivo]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+		</element>
+		<element kind="rectangle" uuid="b210fc9d-cefe-4b86-8621-6a6372ce465c" x="0" y="0" width="555" height="20" backcolor="#CCE3EA">
+			<pen lineWidth="0.5" lineColor="rgba(255, 255, 255, 0.0)"/>
+		</element>
+		<element kind="staticText" uuid="2d298334-f83a-4f28-a0be-94309d5e26d0" x="0" y="0" width="555" height="20" fontSize="9.0" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Condiciones Plan Empresarial]]></text>
+		</element>
+		<element kind="rectangle" uuid="1ec35992-2e26-463d-b59c-6e40103c3802" x="0" y="20" width="329" height="20" backcolor="#CCE3EA">
+			<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+		</element>
+		<element kind="rectangle" uuid="f9ca6aa6-228c-4452-a0ab-873aa6997df9" x="329" y="20" width="226" height="20" backcolor="#CCE3EA">
+			<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+		</element>
+		<element kind="staticText" uuid="f359aed0-49aa-47a6-b25a-edf48a4ec208" x="0" y="20" width="329" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[NOMBRE DEL PLAN EMPRESARIAL]]></text>
+		</element>
+		<element kind="textField" uuid="e826a8ca-279e-44bf-a470-166960945a67" x="330" y="20" width="225" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{mpa_nombre_plan_empresarial}]]></expression>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<element kind="component" uuid="589ecfca-05d7-4b2d-af6d-d4313b3fef4b" x="0" y="1" width="554" height="20">
+				<component kind="table">
+					<datasetRun uuid="7f54916d-3a9b-47c6-aa62-f6dc2e77deb6" subDataset="MpaDataSet">
+						<dataSourceExpression><![CDATA[$P{mpa_collection_table}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="9605cf7e-86d0-4995-b0c6-979bea56839d" width="45">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="1bbc6b84-2699-4583-a9a7-9e6455efbfd9" x="0" y="0" width="45" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{codigoObjetivo}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="088b36a3-5283-4d11-9d60-4c7f7356593c" width="85">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="bab2d112-8e76-435d-8e2e-2ce5cd9b1c68" x="0" y="0" width="85" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{nombreObjetivo}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="b4af837b-e6c5-4821-b646-4bcd86385597" width="41">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="05222987-96a8-4ef8-bb7b-22ff04822a19" x="0" y="0" width="41" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{tipoAporte}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="933fb822-30aa-4d8b-9300-e1d116d6ffe1" width="41">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="dcedc811-5ff2-4231-bdc6-24f23c965c19" x="0" y="0" width="41" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{realizaAporte}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="2df5c35b-29e5-418c-ac5b-1cd000564f0e" width="39">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="ebb54445-bad9-4443-aed3-2b144aa6d247" x="0" y="0" width="39" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{aporteTieneCondicion}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+					<column kind="single" uuid="9e4b2012-5923-470d-ba2e-9f205f39b7de" width="25">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="368ef1c9-4116-4e07-be5f-ec9ebaf66f29" x="0" y="0" width="25" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{montAporteTipoValor}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+					</column>
+					<column kind="single" uuid="1e0d8f1a-6a8e-4442-998e-681804481dc0" width="47">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="26d7cec5-3bb3-49e8-8c65-ad6762a55966" x="0" y="0" width="47" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{montAporteValor}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+					</column>
+					<column kind="single" uuid="e77aa656-58c5-49db-858f-9bcdf46c583a" width="47">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="cc066ad2-7093-4e5d-8791-dd71a161fdad" x="0" y="0" width="47" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{periodicidad}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+					</column>
+					<column kind="single" uuid="871a5a09-d02b-4f36-9489-05620ade148e" width="47">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="bd467511-a8da-4751-883a-3ef82a5c5230" x="0" y="0" width="47" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{permiteRetiros}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+					</column>
+					<column kind="single" uuid="d8652fd9-a4a7-418b-a6dc-c0c1288a407b" width="46">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="31fd9453-efe2-467f-9a28-64da7613bbc5" x="0" y="0" width="46" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{reqAutorizacionRetiros}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+					</column>
+					<column kind="single" uuid="840b752b-7331-4480-96fa-e3af707bced3" width="45">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="f356ade7-c75f-4d39-90c0-a1af7992097c" x="0" y="0" width="45" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{permiteTrasladoPortafolios}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+					</column>
+					<column kind="single" uuid="41610a38-3a0c-41a5-b458-76045d353656" width="46">
+						<detailCell height="20" style="Table_TD">
+							<element kind="textField" uuid="d79d672a-6d04-4363-b67b-1c0110ad92e9" x="0" y="0" width="46" height="20" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+								<expression><![CDATA[$F{permiteBloqueoEntidades}]]></expression>
+							</element>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+			</element>
+		</band>
+	</detail>
+</jasperReport>
