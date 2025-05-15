@@ -1,4 +1,4 @@
-package co.com.porvenir.extracto_empresarial.adapters.in.web.dto;
+package co.com.porvenir.extracto_empresarial.adapters.in.web.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;

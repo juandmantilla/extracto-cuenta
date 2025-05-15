@@ -1,6 +1,6 @@
 package co.com.porvenir.extracto_empresarial.application.exceptions;
 
-import co.com.porvenir.extracto_empresarial.application.exceptions.errors.ErrorMessages;
+import co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages.ReponseMessage;
 import lombok.Getter;
 
 @Getter
@@ -17,10 +17,10 @@ public class PorvenirException extends RuntimeException {
         this.cause = cause;
     }
 
-    public PorvenirException(ErrorMessages errorWrapper, Throwable cause) {
+    public PorvenirException(ReponseMessage errorWrapper, Throwable cause) {
         super(errorWrapper.getMessageError());
         this.messageCode = errorWrapper.getMessageError();
-        this.errorCode = errorWrapper.getErrorCode();
+        this.errorCode = errorWrapper.getStatusCode();
         this.cause = cause;
     }
 
