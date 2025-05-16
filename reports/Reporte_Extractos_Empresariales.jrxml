@@ -1,5 +1,5 @@
 <!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
-<jasperReport name="Reporte Extractos Empresariales" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6a266ac9-ee10-4db7-8c7f-a37450aebe2a">
+<jasperReport name="Reporte Extractos Empresariales" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9a0db263-5993-4f7d-88ec-3d4cdb7bffc2">
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
 	<parameter name="nit" class="java.lang.String"/>
 	<parameter name="periodo" class="java.lang.String"/>
@@ -32,7 +32,7 @@
 	<parameter name="igge_direccion" class="java.lang.String"/>
 	<parameter name="igge_entidad_patrocinadora" class="java.lang.String"/>
 	<parameter name="igge_ciudad_depto" class="java.lang.String"/>
-	<parameter name="igge_collection_table" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="igge_collection_table" class="java.util.Collection"/>
 	<parameter name="ide_saldo_anterior" class="java.lang.String"/>
 	<parameter name="ide_aportes" class="java.lang.String"/>
 	<parameter name="ide_retiros" class="java.lang.String"/>
@@ -44,14 +44,14 @@
 	<parameter name="ide_plan" class="java.lang.String"/>
 	<parameter name="ide_fondo" class="java.lang.String"/>
 	<parameter name="ide_renta_acumulada" class="java.lang.String"/>
-	<parameter name="ide_collection_table" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="ide_collection_table" class="java.util.Collection"/>
 	<parameter name="mpa_nit" class="java.lang.String"/>
 	<parameter name="mpa_monto_proceso" class="java.lang.String"/>
 	<parameter name="mpa_nit_total" class="java.lang.String"/>
 	<parameter name="mpa_total_monto_proceso" class="java.lang.String"/>
 	<parameter name="mpa_nombre_plan_empresarial" class="java.lang.String"/>
-	<parameter name="mpa_collection_table" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
-	<parameter name="rmp_collection_table" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="mpa_collection_table" class="java.util.Collection"/>
+	<parameter name="rmp_collection_table" class="java.util.Collection"/>
 	<parameter name="igge_subreport" class="net.sf.jasperreports.engine.JasperReport"/>
 	<parameter name="ide_subreport" class="net.sf.jasperreports.engine.JasperReport"/>
 	<parameter name="mpa_subreport" class="net.sf.jasperreports.engine.JasperReport"/>
@@ -59,18 +59,18 @@
 	<query language="sql"><![CDATA[]]></query>
 	<background splitType="Stretch"/>
 	<pageHeader height="110" splitType="Stretch">
-		<element kind="textField" uuid="2a75e474-a233-412f-b7ba-130aa40c9e79" x="390" y="0" width="157" height="20" fontName="Arial" fontSize="8.0" hTextAlign="Right">
+		<element kind="textField" uuid="140adeec-a596-4f93-a91c-2ab838a15afb" x="390" y="0" width="157" height="20" fontName="Arial" fontSize="8.0" hTextAlign="Right">
 			<expression><![CDATA["Página " + $V{PAGE_NUMBER} + " de"]]></expression>
 		</element>
-		<element kind="rectangle" uuid="635758e5-a516-4975-b8ac-1c11f132f26b" x="0" y="20" width="554" height="90" backcolor="#DEEDF1">
+		<element kind="rectangle" uuid="e1dfeb1b-928c-4068-a780-da5498f9e12e" x="0" y="20" width="554" height="90" backcolor="#DEEDF1">
 			<pen lineWidth="0.0" lineColor="rgba(0, 0, 0, 0.0)"/>
 		</element>
-		<element kind="frame" uuid="bf33a510-1d8d-48a4-9b02-49de521a311a" x="380" y="20" width="174" height="30">
+		<element kind="frame" uuid="1f69a235-a603-41f2-8f9a-1e774478a3ea" x="380" y="20" width="174" height="30">
 			<property name="com.jaspersoft.studio.element.name" value="Periodo frame"/>
-			<element kind="rectangle" uuid="d365bf1e-5354-445a-a09b-bf8e739aa0f7" x="0" y="0" width="174" height="30" backcolor="#D6E6E9">
+			<element kind="rectangle" uuid="cd11737e-4809-407e-bd34-d2a88dd04211" x="0" y="0" width="174" height="30" backcolor="#D6E6E9">
 				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="textField" uuid="665b0551-430b-4bee-b0b7-ad7861f7cc02" x="0" y="0" width="174" height="15" forecolor="#666666" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="793c5888-ee2c-4e47-b978-ba6fbc11cb84" x="0" y="0" width="174" height="15" forecolor="#666666" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.12" leftIndent="2" spacingBefore="2"/>
 				<expression><![CDATA["PERIODO"]]></expression>
 				<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
@@ -79,19 +79,19 @@
 				<property name="com.jaspersoft.studio.unit.firstLineIndent" value="pixel"/>
 				<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
 			</element>
-			<element kind="textField" uuid="874782ec-b93e-4f4a-99f2-6aaa3d1e8890" x="0" y="15" width="174" height="15" fontName="SansSerif" fontSize="7.0" textAdjust="ScaleFont" hTextAlign="Left">
+			<element kind="textField" uuid="95f5a337-7f3f-40e2-a250-1316f671f78f" x="0" y="15" width="174" height="15" fontName="SansSerif" fontSize="7.0" textAdjust="ScaleFont" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.12" leftIndent="2"/>
 				<expression><![CDATA[$P{periodo}]]></expression>
 				<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 		</element>
-		<element kind="frame" uuid="d7c411b6-464d-449b-870f-0eeb2c95485d" x="380" y="50" width="174" height="30">
+		<element kind="frame" uuid="6a63b24b-2abd-49df-9669-78bb9f52ab0a" x="380" y="50" width="174" height="30">
 			<property name="com.jaspersoft.studio.element.name" value="Extracto frame"/>
-			<element kind="rectangle" uuid="ba599fb6-e26f-4c00-9164-7280094c9743" x="0" y="0" width="174" height="30" backcolor="#D6E6E9">
+			<element kind="rectangle" uuid="4beda6c2-5911-4954-888f-0e2868ee393d" x="0" y="0" width="174" height="30" backcolor="#D6E6E9">
 				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="textField" uuid="d21d2b7d-79ff-44fe-a355-ed7946dcad9b" x="0" y="0" width="174" height="15" forecolor="#676871" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="2b7df392-04d2-4d0f-b3d4-b7c0eda5fd92" x="0" y="0" width="174" height="15" forecolor="#676871" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.12" leftIndent="2" spacingBefore="2"/>
 				<expression><![CDATA["EXTRACTO No"]]></expression>
 				<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
@@ -99,19 +99,19 @@
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
 			</element>
-			<element kind="textField" uuid="bc1e65bb-055b-46e6-a753-f08b5b4d42b6" x="0" y="15" width="174" height="15" fontName="SansSerif" fontSize="7.0" textAdjust="ScaleFont" hTextAlign="Left">
+			<element kind="textField" uuid="b3296799-0be9-465e-950d-ab3c92b45d57" x="0" y="15" width="174" height="15" fontName="SansSerif" fontSize="7.0" textAdjust="ScaleFont" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.12" leftIndent="2"/>
 				<expression><![CDATA[$P{numero_extracto}]]></expression>
 				<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 		</element>
-		<element kind="frame" uuid="f4656e68-8b35-4ec5-b6af-bd504326818f" x="380" y="80" width="174" height="30">
+		<element kind="frame" uuid="fb7a21a1-7669-499b-bba2-709afc722154" x="380" y="80" width="174" height="30">
 			<property name="com.jaspersoft.studio.element.name" value="Extracto frame"/>
-			<element kind="rectangle" uuid="c1fd4c1f-68ef-478b-abf2-8e1c3f538e1f" x="0" y="0" width="174" height="30" backcolor="#D6E6E9">
+			<element kind="rectangle" uuid="b6df0e6f-17a8-4202-a2f8-d1dd3b8ee26f" x="0" y="0" width="174" height="30" backcolor="#D6E6E9">
 				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="textField" uuid="f8dc9db4-deed-4da7-98c3-5a746804954c" x="0" y="0" width="174" height="15" forecolor="#676871" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="fd11744e-8d25-4756-bf3a-e26d56a0e557" x="0" y="0" width="174" height="15" forecolor="#676871" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.12" leftIndent="2" spacingBefore="2"/>
 				<expression><![CDATA["FECHA EXPEDICIÓN"]]></expression>
 				<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
@@ -119,34 +119,37 @@
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
 			</element>
-			<element kind="textField" uuid="434324f5-5b57-4293-95b8-95a04bda9b28" x="0" y="15" width="174" height="15" fontName="SansSerif" fontSize="7.0" textAdjust="ScaleFont" hTextAlign="Left">
+			<element kind="textField" uuid="76bcd78d-2818-4f27-a2d7-6af5ca6389e9" x="0" y="15" width="174" height="15" fontName="SansSerif" fontSize="7.0" textAdjust="ScaleFont" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.12" leftIndent="2"/>
 				<expression><![CDATA[$P{fecha_expedicion}]]></expression>
 				<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 		</element>
-		<element kind="staticText" uuid="29b5ae1c-a732-417e-9412-ab3657391fe3" x="80" y="30" width="199" height="39" forecolor="#333333" fontName="Arial" fontSize="16.0" bold="false" hTextAlign="Left">
+		<element kind="staticText" uuid="9cdadd73-3692-49a4-b499-126b518e286e" x="80" y="30" width="199" height="39" forecolor="#333333" fontName="Arial" fontSize="16.0" bold="false" hTextAlign="Left">
 			<paragraph lineSpacingSize="1.2"/>
 			<text><![CDATA[Extracto Plan Empresarial
 Porvenir Inversiones]]></text>
 		</element>
-		<element kind="staticText" uuid="32c159bd-f04c-4b99-96e5-8bec96f15883" x="79" y="74" width="200" height="25" forecolor="#339966" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Left">
+		<element kind="staticText" uuid="07fc52b8-e7a3-49e5-9eff-756bc4727b69" x="79" y="74" width="200" height="25" forecolor="#339966" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Left">
 			<paragraph lineSpacingSize="1.2"/>
 			<text><![CDATA[FONDO VOLUNTARIO DE PENSIÓN PORVENIR - PLAN
 EMPRESARIAL
 ]]></text>
 		</element>
-		<element kind="textField" uuid="44202bcb-f7c1-439c-a793-ea05f82ae816" x="547" y="0" width="8" height="20" fontName="Arial" fontSize="8.0" evaluationTime="Report" hTextAlign="Right">
+		<element kind="textField" uuid="0c0ad3b2-4a52-4867-99c7-823139efbbff" x="547" y="0" width="8" height="20" fontName="Arial" fontSize="8.0" evaluationTime="Report" hTextAlign="Right">
 			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
 			<property name="com.jaspersoft.studio.unit.width" value="px"/>
 		</element>
 	</pageHeader>
 	<detail>
-		<band height="680">
-			<element kind="subreport" uuid="e2c5e17b-f804-4466-ab24-48a871166881" x="-20" y="0" width="595" height="170">
-				<dataSourceExpression><![CDATA[$P{igge_collection_table}]]></dataSourceExpression>
+		<band height="200">
+			<element kind="subreport" uuid="b9c10bbc-e3dd-4ec9-8efd-1fe701b88dc3" x="-20" y="0" width="595" height="200">
+				<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
 				<expression><![CDATA[$P{igge_subreport}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="igge subreport"/>
 				<parameter name="igge_nit_empresarial">
 					<expression><![CDATA[$P{igge_nit_empresarial}]]></expression>
 				</parameter>
@@ -193,9 +196,15 @@ EMPRESARIAL
 					<expression><![CDATA[$P{igge_ciudad_depto}]]></expression>
 				</parameter>
 			</element>
-			<element kind="subreport" uuid="08f5bb1f-d896-4a46-8cb3-aae9182e0e87" x="-20" y="170" width="595" height="160">
-				<dataSourceExpression><![CDATA[$P{ide_collection_table}]]></dataSourceExpression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="200">
+			<element kind="subreport" uuid="c576e74e-3b5a-4ab4-803a-277f7a1a01e0" x="-20" y="0" width="595" height="200">
+				<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
 				<expression><![CDATA[$P{ide_subreport}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="ide subreport"/>
 				<parameter name="ide_saldo_anterior">
 					<expression><![CDATA[$P{ide_saldo_anterior}]]></expression>
 				</parameter>
@@ -233,9 +242,15 @@ EMPRESARIAL
 					<expression><![CDATA[$P{ide_collection_table}]]></expression>
 				</parameter>
 			</element>
-			<element kind="subreport" uuid="828ff769-88a1-4439-ae13-9d12d5dd10a1" x="-20" y="330" width="595" height="170">
-				<dataSourceExpression><![CDATA[$P{mpa_collection_table}]]></dataSourceExpression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="200">
+			<element kind="subreport" uuid="b0189293-6e3f-4319-bb4c-b8ccc517d16a" x="-20" y="0" width="595" height="200">
+				<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
 				<expression><![CDATA[$P{mpa_subreport}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="mpa subreport"/>
 				<parameter name="mpa_nit">
 					<expression><![CDATA[$P{mpa_nit}]]></expression>
 				</parameter>
@@ -252,52 +267,59 @@ EMPRESARIAL
 					<expression><![CDATA[$P{mpa_nombre_plan_empresarial}]]></expression>
 				</parameter>
 			</element>
-			<element kind="subreport" uuid="225ace0f-1777-4d65-9278-1c9c1cf3bf51" x="-20" y="502" width="595" height="178">
-				<dataSourceExpression><![CDATA[$P{rmp_collection_table}]]></dataSourceExpression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="200">
+			<element kind="subreport" uuid="2de01005-2dae-4b9b-9036-37ef869a8ceb" x="-20" y="0" width="595" height="200">
+				<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
 				<expression><![CDATA[$P{rmp_subreport}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="rmp subreport"/>
 			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</band>
 	</detail>
 	<summary height="110">
-		<element kind="rectangle" uuid="750b4ec9-fb64-4873-bf14-55bbb612c6ec" x="0" y="0" width="555" height="9" backcolor="#CCE3EA">
+		<element kind="rectangle" uuid="b3f54ec9-3177-430a-b834-a527df852e21" x="0" y="0" width="555" height="9" backcolor="#CCE3EA">
 			<pen lineColor="rgba(255, 255, 255, 0.0)"/>
 		</element>
-		<element kind="staticText" uuid="8655be8e-8f0f-492a-a53f-6c86615e0f84" x="0" y="0" width="80" height="10" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+		<element kind="staticText" uuid="b2a927b4-ac62-437a-a8db-bf376858d971" x="0" y="0" width="80" height="10" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 			<paragraph leftIndent="2" rightIndent="0"/>
 			<text><![CDATA[Datos del consultor]]></text>
 			<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
 			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
 		</element>
-		<element kind="staticText" uuid="220e43d5-5ff8-4dc5-81eb-0e4fe9e79fd8" x="0" y="50" width="554" height="60" fontSize="7.0" bold="true" hTextAlign="Justified" vTextAlign="Top">
+		<element kind="staticText" uuid="25db14f3-6a72-4dd9-9d22-f433e2586999" x="0" y="50" width="554" height="60" fontSize="7.0" bold="true" hTextAlign="Justified" vTextAlign="Top">
 			<text><![CDATA[Si tienes alguna duda sobre la información presentada en este documento, comunícate con nuestros canales de servicio.
 Cuenta con un Defensor del Consumidor Financiero, Dra. Ana María Giraldo Rincón ubicado en la carrera 11A No. 96 - 51 oficina 203 en Bogotá, Teléfono: 601 6108161, defensoriaporvenir@legalcrc.com, quien dará trámite a su queja de forma objetiva y gratuita.
 No permita que un tramitador le cobre dinero, puede hacer sus trámites en Porvenir sin costo. Si alguien le cobra, o tiene denuncias relacionadas con fraudes o ética de nuestros empleados, denúncielo ingresando a: www.porvenir.com.co/web/acerca-de-porvenir/linea-etica o comunicándose al teléfono en Bogotá 601 7434441 Ext. 77777.
 ]]></text>
 		</element>
-		<element kind="frame" uuid="a7759aad-0dea-4191-9c61-047efed59f90" x="0" y="20" width="555" height="20">
-			<element kind="staticText" uuid="459f7d7f-177e-4c21-8b3d-b903a1e0d784" x="0" y="0" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+		<element kind="frame" uuid="69725dcc-f12e-4fe3-a44f-e56a7eab6de7" x="0" y="20" width="555" height="20">
+			<element kind="staticText" uuid="9ceb3b48-e4ed-4396-a88a-29a1f4083a09" x="0" y="0" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Nombre:]]></text>
 			</element>
-			<element kind="staticText" uuid="5b4038d6-e30b-4717-970a-bceff99bd6cb" x="0" y="10" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="staticText" uuid="dac64208-15ce-41ff-8011-bcd46b45af59" x="0" y="10" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Ciudad:]]></text>
 			</element>
-			<element kind="staticText" uuid="3860b33f-3d1f-4b42-90db-41f305a1054b" x="280" y="0" width="100" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="staticText" uuid="952baf78-eab3-4b6f-9822-5b1bfeafe710" x="280" y="0" width="100" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Celular o beeper:]]></text>
 			</element>
-			<element kind="staticText" uuid="b01277e9-b3b3-488a-bbb1-40fc62de842b" x="280" y="10" width="100" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="staticText" uuid="575cd82d-63b5-4694-971d-05a33c837249" x="280" y="10" width="100" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Correo Electrónico:]]></text>
 			</element>
-			<element kind="textField" uuid="9b0707ab-5076-40fa-8c58-5dde4ca47dcf" x="80" y="0" width="200" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="6bd74d7f-d7f7-46ef-8df0-0897a80c88fa" x="80" y="0" width="200" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_nombre}]]></expression>
 			</element>
-			<element kind="textField" uuid="2b71288c-b8cc-41cb-8381-20d6eefa7855" x="80" y="10" width="200" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="3a673438-5f29-4989-b39b-473b845ea07b" x="80" y="10" width="200" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_ciudad}]]></expression>
 			</element>
-			<element kind="textField" uuid="718ebdff-0967-47a1-8f95-18cd46897b47" x="380" y="0" width="175" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="db85f182-cbd7-4789-8322-08b870a685ab" x="380" y="0" width="175" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_celular}]]></expression>
 			</element>
-			<element kind="textField" uuid="d55a08a9-e76a-424a-bff1-f4112ffb0377" x="380" y="10" width="175" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="7fdcac0b-c7b2-437d-b115-922e841e22d2" x="380" y="10" width="175" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_email}]]></expression>
 			</element>
 		</element>
