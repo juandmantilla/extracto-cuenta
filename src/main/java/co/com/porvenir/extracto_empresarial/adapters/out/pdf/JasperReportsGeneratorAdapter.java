@@ -23,9 +23,7 @@ public class JasperReportsGeneratorAdapter implements GenerateReportPort {
 
         try {
             JasperReport reportEmpty = (JasperReport) JRLoader.loadObject(reportBuilded.getInputStream());
-
             var reportFilled = JasperFillManager.fillReport(reportEmpty, parameters, new JREmptyDataSource());
-
             return JasperExportManager.exportReportToPdf(reportFilled);
         } catch (JRException | IOException e) {
             log.error("Error when trying to generate the report");

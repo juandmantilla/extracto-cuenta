@@ -1,12 +1,10 @@
 package co.com.porvenir.extracto_empresarial.application.helpers;
 
 import co.com.porvenir.extracto_empresarial.application.dto.models.ExtractoEmpresarialReportDTO;
-import co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.ReeParamName;
 import co.com.porvenir.extracto_empresarial.application.exceptions.PorvenirException;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.util.JRLoader;
 import org.springframework.core.io.ClassPathResource;
 
@@ -17,6 +15,7 @@ import java.util.Map;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IdeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IggeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.MpaParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.ReeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.RMP_COLLECTION_TABLE;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.RMP_SUBREPORT;
 import static co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages.ReponseMessage.INTERNAL_SERVER_ERROR;
@@ -43,28 +42,25 @@ public class ExtractoEmpresarialReportHelper {
         buildIdeParams(reportParameters, report);
         buildMpaParams(reportParameters, report);
         buildRmpParams(reportParameters, report);
-
         return reportParameters;
     }
 
     private static void buildGeneralParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
 
-        params.put(ReeParamName.NIT.getParamName(), report.getNit());
-        params.put(ReeParamName.PERIODO.getParamName(), report.getPeriodo());
-        params.put(ReeParamName.NUMERO_EXTRACTO.getParamName(), report.getNumeroExtracto());
-        params.put(ReeParamName.FECHA_EXPEDICION.getParamName(), report.getFechaExpedicion());
-        params.put(ReeParamName.DIRECCION.getParamName(), report.getDireccion());
-        params.put(ReeParamName.ENTIDAD_PATROCINADORA.getParamName(), report.getEntidadPatrocinadora());
-        params.put(ReeParamName.CIUDAD_DEPTO.getParamName(), report.getCiudadDepto());
-        params.put(ReeParamName.NIC.getParamName(), report.getNic());
-        params.put(ReeParamName.NIT_EMPRESARIAL.getParamName(), report.getNitEmpresarial());
-        params.put(ReeParamName.NIT_GRUPO_EMPRESARIAL.getParamName(), report.getNitGrupoEmpresarial());
-
-        params.put(ReeParamName.CONSULTOR_NOMBRE.getParamName(), report.getConsultorNombre());
-        params.put(ReeParamName.CONSULTOR_CIUDAD.getParamName(), report.getConsultorCiudad());
-        params.put(ReeParamName.CONSULTOR_CELULAR.getParamName(), report.getConsultorCelular());
-        params.put(ReeParamName.CONSULTOR_EMAIL.getParamName(), report.getConsultorEmail());
-
+        params.put(NIT.getParamName(), report.getNit());
+        params.put(PERIODO.getParamName(), report.getPeriodo());
+        params.put(NUMERO_EXTRACTO.getParamName(), report.getNumeroExtracto());
+        params.put(FECHA_EXPEDICION.getParamName(), report.getFechaExpedicion());
+        params.put(DIRECCION.getParamName(), report.getDireccion());
+        params.put(ENTIDAD_PATROCINADORA.getParamName(), report.getEntidadPatrocinadora());
+        params.put(CIUDAD_DEPTO.getParamName(), report.getCiudadDepto());
+        params.put(NIC.getParamName(), report.getNic());
+        params.put(NIT_EMPRESARIAL.getParamName(), report.getNitEmpresarial());
+        params.put(NIT_GRUPO_EMPRESARIAL.getParamName(), report.getNitGrupoEmpresarial());
+        params.put(CONSULTOR_NOMBRE.getParamName(), report.getConsultorNombre());
+        params.put(CONSULTOR_CIUDAD.getParamName(), report.getConsultorCiudad());
+        params.put(CONSULTOR_CELULAR.getParamName(), report.getConsultorCelular());
+        params.put(CONSULTOR_EMAIL.getParamName(), report.getConsultorEmail());
     }
 
     private static void buildIggeParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
@@ -86,9 +82,8 @@ public class ExtractoEmpresarialReportHelper {
         params.put(IGGE_ENTIDAD_PATROCINADORA.getParamName(), report.getIggeEntidadPatrocinadora());
         params.put(IGGE_CIUDAD_DEPTO.getParamName(), report.getIggeCiudadDepto());
         params.put(IGGE_DIRECCION.getParamName(), report.getIggeDireccion());
-
-        params.put(IGGE_SUBREPORT_PARAM.getParamName(), jasperSubreport);
-        params.put(IGGE_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource((report.getIggeTable())));
+        params.put(IGGE_SUBREPORT.getParamName(), jasperSubreport);
+        params.put(IGGE_COLLECTION_TABLE.getParamName(), report.getIggeTable());
     }
 
     private static void buildIdeParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
@@ -106,10 +101,8 @@ public class ExtractoEmpresarialReportHelper {
         params.put(IDE_FONDO.getParamName(), report.getIdeFondo());
         params.put(IDE_RENTA_ACUMULADA.getParamName(), report.getIdeRentaAcumulada());
         params.put(IDE_SALDO_ANTERIOR.getParamName(), report.getIdeSaldoAnterior());
-
-
         params.put(IDE_SUBREPORT.getParamName(), jasperSubreport);
-        params.put(IDE_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getIdeTable()));
+        params.put(IDE_COLLECTION_TABLE.getParamName(), report.getIdeTable());
     }
 
     private static void buildMpaParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
@@ -121,17 +114,14 @@ public class ExtractoEmpresarialReportHelper {
         params.put(MPA_NIT_TOTAL.getParamName(), report.getMpaNitTotal());
         params.put(MPA_TOTAL_MONTO_PROCESO.getParamName(), report.getMpaTotalMontoProceso());
         params.put(MPA_NOMBRE_PLAN_EMPRESARIAL.getParamName(), report.getMpaNombrePlanEmpresarial());
-
         params.put(MPA_SUBREPORT.getParamName(), jasperSubreport);
-        params.put(MPA_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getMpaTable()));
+        params.put(MPA_COLLECTION_TABLE.getParamName(), report.getMpaTable());
     }
 
     private static void buildRmpParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
-
         var jasperSubreport = getSubreport(RMP_SUBREPORT_NAME);
-
         params.put(RMP_SUBREPORT.getParamName(), jasperSubreport);
-        params.put(RMP_COLLECTION_TABLE.getParamName(), new JRBeanCollectionDataSource(report.getRmpTable()));
+        params.put(RMP_COLLECTION_TABLE.getParamName(), report.getRmpTable());
     }
 
     private static JasperReport getSubreport(String subreportName) {
