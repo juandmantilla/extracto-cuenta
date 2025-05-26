@@ -18,7 +18,7 @@ import static co.com.porvenir.extracto_empresarial.application.dto.models.params
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IggeParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.MpaParamName.*;
 import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages.ReponseMessage.INTERNAL_SERVER_ERROR;
+import static co.com.porvenir.extracto_empresarial.application.exceptions.response.messages.ReponseMessage.INTERNAL_SERVER_ERROR;
 
 @Slf4j
 public class ExtractoEmpresarialReportHelper {
@@ -37,6 +37,7 @@ public class ExtractoEmpresarialReportHelper {
 
     private static Map<String, Object> buildReportParams(ExtractoEmpresarialReportDTO report) {
         var reportParameters = new HashMap<String, Object>();
+        
         buildGeneralParams(reportParameters, report);
         buildIggeParams(reportParameters, report);
         buildIdeParams(reportParameters, report);

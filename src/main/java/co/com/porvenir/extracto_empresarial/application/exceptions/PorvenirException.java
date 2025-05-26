@@ -1,6 +1,6 @@
 package co.com.porvenir.extracto_empresarial.application.exceptions;
 
-import co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages.ReponseMessage;
+import co.com.porvenir.extracto_empresarial.application.exceptions.response.messages.ReponseMessage;
 import lombok.Getter;
 
 @Getter

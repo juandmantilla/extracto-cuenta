@@ -1,4 +1,4 @@
-package co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages;
+package co.com.porvenir.extracto_empresarial.application.exceptions.response.messages;
 
 import lombok.Getter;
 

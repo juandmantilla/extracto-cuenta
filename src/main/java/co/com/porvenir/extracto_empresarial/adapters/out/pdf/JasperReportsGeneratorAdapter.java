@@ -1,7 +1,7 @@
 package co.com.porvenir.extracto_empresarial.adapters.out.pdf;
 
 import co.com.porvenir.extracto_empresarial.application.exceptions.PorvenirException;
-import co.com.porvenir.extracto_empresarial.application.exceptions.responsemessages.ReponseMessage;
+import co.com.porvenir.extracto_empresarial.application.exceptions.response.messages.ReponseMessage;
 import co.com.porvenir.extracto_empresarial.domain.ports.GenerateReportPort;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.jasperreports.engine.*;
