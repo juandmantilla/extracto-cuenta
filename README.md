@@ -1,6 +1,6 @@
 # ces-afi-ms-sinc-afiliaciones-registradas-java
 
-**Autor:** [por14572](https://github.com/POR14572_porvenir)
+**Autor:** [POR19540](https://github.com/POR14572_porvenir)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Java](https://img.shields.io/badge/Java-21-blue)](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
