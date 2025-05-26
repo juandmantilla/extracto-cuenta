@@ -37,12 +37,10 @@ en formato PDF.
 
 #### **Tecnología a utilizar**
 
-- Lenguaje de Programación: Java 21
-- Framework: Spring Boot 3.4.5
-- Gestor de dependencias: Maven 4.0.0
-- Logs: Lombok 1.18.38
-
-- Contenedores: Docker
+- **Lenguaje de Programación**: Java 21
+- **Framework**: Spring Boot 3.4.5
+- **Gestor de dependencias**: Maven 4.0.0
+- **Logs**: Lombok 1.18.38
 
 - Orquestador de Contenedores PT: AKS AZ-EU-PV-PT-CE-PVYC-AKS-01
 - Orquestador de Contenedores QA: AKS AZ-EU-PV-QA-CE-PVYC-AKS-01
