@@ -6,7 +6,7 @@ import lombok.Getter;
 public enum ReponseMessage {
 
 
-    PDF_FOUNDED("Petición procesada correctamente", 200),
+    PDF_FOUNDED("Petición procesada correctamente", 202),
     ADD_QUEUE_REQUEST("Solicitud enviada correctamente", 235),
     PDF_IN_PROCESS("El PDF se encuentra en proceso", 236),
     PDF_REQUEST_BY_EMAIL("Se ha generado la notificación de...", 237),

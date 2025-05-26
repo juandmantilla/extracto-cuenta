@@ -1,5 +1,5 @@
 <!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
-<jasperReport name="resumen movimiento participes periodo" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="06fd0b56-ecf4-4480-a8fe-806a775efefa">
+<jasperReport name="resumen movimiento participes periodo" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="61211146-9a20-4312-947b-833782256310">
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
 			<pen lineWidth="0.5" lineColor="#000000"/>
@@ -45,7 +45,7 @@
 			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
 		</box>
 	</style>
-	<dataset name="RmpDataSet" uuid="369bc631-905b-4fc4-b06f-021309344dba">
+	<dataset name="RmpDataSet" whenResourceMissingType="Empty" uuid="2eceee84-6ac6-4355-84fb-a3c22ac474e8">
 		<query language="sql"><![CDATA[]]></query>
 		<field name="cuentaNumero" class="java.lang.String"/>
 		<field name="nombreParticipe" class="java.lang.String"/>
@@ -56,123 +56,143 @@
 		<field name="trasladosObjetivos" class="java.lang.String"/>
 		<field name="saldoFinal" class="java.lang.String"/>
 	</dataset>
-	<parameter name="rmp_collection_table" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="rmp_collection_table" class="java.util.Collection"/>
 	<query language="sql"><![CDATA[]]></query>
 	<background splitType="Stretch"/>
-	<pageHeader height="21">
-		<element kind="rectangle" uuid="9301245b-5377-4031-9ee1-9be39008ab37" x="0" y="0" width="555" height="21" backcolor="#CCE2E9">
+	<pageHeader height="23">
+		<element kind="rectangle" uuid="47bee413-b938-4b02-85b3-69cd2d2a6316" x="0" y="0" width="555" height="21" backcolor="#CCE2E9">
 			<pen lineColor="rgba(0, 0, 0, 0.0)"/>
 		</element>
-		<element kind="staticText" uuid="bd8b096a-e9ae-457b-aa1d-7f637c4ab246" x="0" y="0" width="556" height="20" fontName="Arial" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+		<element kind="staticText" uuid="8e97beef-b1b4-459e-bc78-5e28fc6deff6" x="0" y="0" width="556" height="20" fontName="Arial" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 			<text><![CDATA[Resumen de Movimientos de los participes en el período]]></text>
 		</element>
 	</pageHeader>
+	<columnHeader height="18">
+		<element kind="frame" uuid="7d3f6ab3-f8bd-47d2-bb0b-1b63f570bb57" x="0" y="-2" width="555" height="20">
+			<element kind="rectangle" uuid="14a56ec8-9e13-4766-a72c-ab27e596fa33" x="0" y="0" width="69" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="b874829d-97c5-4d56-86e8-05ed6119cdf2" x="69" y="0" width="69" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="e36bd94c-141c-4f49-bcfe-31e894f3ba51" x="138" y="0" width="70" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="bec1339b-1576-4044-aa1d-6a930be2a31f" x="208" y="0" width="70" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="1ef59ef6-745c-48e6-b267-c47edefec998" x="278" y="0" width="70" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="c8157a28-2a06-4be2-8083-25bfc98955c2" x="348" y="0" width="69" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="4924777b-4e3d-48e2-be65-d3c81c1c17e6" x="417" y="0" width="69" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="rectangle" uuid="1a1a9230-ef59-4215-8d96-fba78e307e30" x="486" y="0" width="69" height="20" backcolor="#BFE1FF">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</element>
+			<element kind="staticText" uuid="127d499a-ce09-46a6-86bf-3412ccd3e546" x="0" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Cuenta Número]]></text>
+			</element>
+			<element kind="staticText" uuid="a4606e61-a39d-4772-81e2-fcc50661fa1f" x="69" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Nombre Partícipe]]></text>
+			</element>
+			<element kind="staticText" uuid="c1e9a08b-43f6-4975-a946-7132e4c7dcff" x="138" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Objetivo]]></text>
+			</element>
+			<element kind="staticText" uuid="b05acea6-78ce-41bf-8563-a907e3f87257" x="208" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Saldo Inicial]]></text>
+			</element>
+			<element kind="staticText" uuid="54147864-6623-409b-a0b5-822aaa1e0b33" x="278" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Aportes]]></text>
+			</element>
+			<element kind="staticText" uuid="ee1504e4-b402-4719-ac6c-54bad0937bf5" x="348" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Retiros]]></text>
+			</element>
+			<element kind="staticText" uuid="1b678e35-4ad6-42fe-b865-798d8affcc5a" x="417" y="0" width="69" height="20" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Traslados entre Objetivos]]></text>
+			</element>
+			<element kind="staticText" uuid="7fadcc44-b39c-4252-b886-93829ed36063" x="486" y="0" width="69" height="20" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Saldo Final]]></text>
+			</element>
+		</element>
+	</columnHeader>
 	<detail>
-		<band height="50" splitType="Stretch">
-			<element kind="component" uuid="3fd789cb-0c78-47a2-abf5-9081150e2c5f" x="0" y="0" width="555" height="50">
-				<component kind="table">
-					<datasetRun uuid="90c76ebc-2d32-469a-b646-226f10e96c62" subDataset="RmpDataSet">
-						<dataSourceExpression><![CDATA[$P{rmp_collection_table}]]></dataSourceExpression>
+		<band height="20" splitType="Stretch">
+			<element kind="component" uuid="413f3f75-44d9-4870-9ae7-571c9f9f2964" x="0" y="0" width="555" height="20" printRepeatedValues="false">
+				<component kind="table" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun uuid="434aa71f-8eeb-487f-8b49-b155b16d73bc" subDataset="RmpDataSet">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{rmp_collection_table})]]></dataSourceExpression>
 					</datasetRun>
-					<column kind="single" uuid="e6a18028-40dd-4d9f-a4bc-daede5becfa2" width="69">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="bbf96e84-67ff-4a24-908f-1c1634068687" x="0" y="0" width="69" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Cuenta Número]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="5b0b99c7-6df2-4421-9958-ccf7aa6226fc" width="69">
 						<detailCell height="20" style="centrado seis">
-							<element kind="textField" uuid="107aa085-c610-4109-acf6-b0d9095136af" x="0" y="0" width="69" height="20" fontSize="6.0" hTextAlign="Left" vTextAlign="Middle">
+							<element kind="textField" uuid="4558ec6c-c845-4645-9d0a-ed973ebd2c8d" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Left" vTextAlign="Middle">
 								<expression><![CDATA[$F{cuentaNumero}]]></expression>
 							</element>
 						</detailCell>
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
 					</column>
-					<column kind="single" uuid="b28d606a-6f69-4738-ab8a-5ade9b3807ca" width="69">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="b41c8a09-cbb0-4b93-8fa6-0f6d846d1d70" x="0" y="0" width="69" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Nombre Partícipe]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="a97eca9d-b30f-49c4-a454-4e0a71e122f0" width="69">
 						<detailCell height="20" style="nombre participe">
-							<element kind="textField" uuid="4c6708f0-ca16-4a1f-9169-fc0c59c9ec1c" x="0" y="0" width="69" height="20" fontSize="6.0" hTextAlign="Left" vTextAlign="Middle">
+							<element kind="textField" uuid="d1c268d1-ed80-41b0-9b86-994ad2cd6b3a" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Left" vTextAlign="Middle">
 								<expression><![CDATA[$F{nombreParticipe}]]></expression>
 							</element>
 						</detailCell>
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
 					</column>
-					<column kind="single" uuid="8c0a379d-b85e-4c5f-87cd-247edf0c3d10" width="70">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="f4e499d1-58bb-436e-a759-d56b66d2a688" x="0" y="0" width="70" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Objetivo]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="352e324d-b439-468f-a9c6-2f9b67d78c9b" width="70">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="e43e4d55-0f08-41ec-94d6-e810c8d37183" x="0" y="0" width="70" height="20" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="17f39f86-3443-4e53-adde-239a570d6b5e" x="0" y="0" width="70" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{objetivo}]]></expression>
 							</element>
 						</detailCell>
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
 					</column>
-					<column kind="single" uuid="a9a0b1ad-3a77-49d6-96f1-4bdca932dea9" width="70">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="98791761-fed8-4466-9f6a-c71d4abbbb53" x="0" y="0" width="70" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Saldo Inicial]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="eb1089b3-4ddd-4879-9c39-8f658936df60" width="70">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="152567c8-e2e4-4442-a825-cc63563c59e9" x="0" y="0" width="70" height="20" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="cb013178-4751-4169-a922-a9712744a0d3" x="0" y="0" width="70" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{saldoInicial}]]></expression>
 							</element>
 						</detailCell>
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
 					</column>
-					<column kind="single" uuid="41cecb92-3dfb-49f1-b520-e70f71f03aba" width="70">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="f1e0e84b-a799-4e10-b2bf-7b62c3a463b7" x="0" y="0" width="70" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Aportes]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="804a6221-21a9-4f15-89c8-c859d6aa8906" width="70">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="89f6a20c-75b3-4d29-ae3f-a13a3e3827ff" x="0" y="0" width="70" height="20" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="d53378aa-0a06-4f75-8f9e-c49848307225" x="0" y="0" width="70" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{aportes}]]></expression>
 							</element>
 						</detailCell>
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
 					</column>
-					<column kind="single" uuid="76195151-eaac-477a-9dc4-824993a52277" width="69">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="c8fb38c3-c369-4fed-bc59-2a5dedcb3931" x="0" y="0" width="69" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Retiros]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="4edc76d9-66f5-44b8-ba17-92094a5d30d2" width="69">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="4103a2f1-e037-4099-a2ee-db3324f6bff7" x="0" y="0" width="69" height="20" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="8ccdb169-385c-42fa-8e0d-3d03aafa1af2" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{retiros}]]></expression>
 							</element>
 						</detailCell>
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
 					</column>
-					<column kind="single" uuid="b7ca53ac-306e-4233-ab1d-386ba643eb7c" width="69">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="f24d351f-9b71-454f-bacb-a696b375697d" x="0" y="0" width="69" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Traslados entre Objetivos]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="d1229bec-6be4-41ce-9fb5-8e6c7be38893" width="69">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="61df80f2-d9c8-4932-9eb4-57d370094d1b" x="0" y="0" width="69" height="20" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="996468bc-3bce-4440-8496-b5fc1e0a5acb" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{trasladosObjetivos}]]></expression>
 							</element>
 						</detailCell>
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
 					</column>
-					<column kind="single" uuid="a84cc68d-a003-4243-9fd7-20d40ff68177" width="69">
-						<columnHeader height="30" rowSpan="1" style="Table_CH">
-							<element kind="staticText" uuid="e86ec696-3580-41de-9e6b-1b79355e840d" x="0" y="0" width="69" height="30" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
-								<text><![CDATA[Saldo Final]]></text>
-							</element>
-						</columnHeader>
+					<column kind="single" uuid="142b7a14-6643-4eff-aab1-27ffd8b2de5a" width="69">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="46a26e6a-c00a-46ae-acfd-b7f2ce4a64e4" x="0" y="0" width="69" height="20" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="bb7f1c2a-a738-4351-8b6c-b9196c29a0a6" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{saldoFinal}]]></expression>
 							</element>
 						</detailCell>

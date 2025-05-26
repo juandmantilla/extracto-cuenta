@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class RmppTableDTO {
+public class RmpTableDTO {
     // RMPP: Resumen Movimiento Partícipes Periodo
     private String cuentaNumero;
     private String nombreParticipe;

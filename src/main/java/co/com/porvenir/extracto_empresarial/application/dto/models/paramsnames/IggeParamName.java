@@ -25,7 +25,7 @@ public enum IggeParamName {
 
     IGGE_COLLECTION_TABLE("igge_collection_table"),
 
-    IGGE_SUBREPORT_PARAM("igge_subreport"),
+    IGGE_SUBREPORT("igge_subreport"),
     IGGE_DATA_SOURCE("igge_data_source"),
     IGGE_PARAMS("igge_subreport_parameters");
 

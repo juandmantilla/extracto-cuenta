@@ -175,9 +175,9 @@ public class GenerateReportService implements GenerateReportUseCase {
         extracto.setMpaTable(mpaTabla);
 
         // Resumen Movimiento Partícipes Periodo (RMPP)
-        List<RmppTableDTO> rmppTabla = new ArrayList<>();
+        List<RmpTableDTO> rmppTabla = new ArrayList<>();
 
-        RmppTableDTO rmpp1 = new RmppTableDTO();
+        RmpTableDTO rmpp1 = new RmpTableDTO();
         rmpp1.setCuentaNumero("CTA-001234");
         rmpp1.setNombreParticipe("Juan Pérez Gómez");
         rmpp1.setObjetivo("Jubilación");
@@ -188,7 +188,7 @@ public class GenerateReportService implements GenerateReportUseCase {
         rmpp1.setSaldoFinal("$42,000,000");
         rmppTabla.add(rmpp1);
 
-        RmppTableDTO rmpp2 = new RmppTableDTO();
+        RmpTableDTO rmpp2 = new RmpTableDTO();
         rmpp2.setCuentaNumero("CTA-002345");
         rmpp2.setNombreParticipe("María López Rodríguez");
         rmpp2.setObjetivo("Educación");
@@ -199,7 +199,7 @@ public class GenerateReportService implements GenerateReportUseCase {
         rmpp2.setSaldoFinal("$30,500,000");
         rmppTabla.add(rmpp2);
 
-        RmppTableDTO rmpp3 = new RmppTableDTO();
+        RmpTableDTO rmpp3 = new RmpTableDTO();
         rmpp3.setCuentaNumero("CTA-003456");
         rmpp3.setNombreParticipe("Carlos Martínez Díaz");
         rmpp3.setObjetivo("Jubilación");
