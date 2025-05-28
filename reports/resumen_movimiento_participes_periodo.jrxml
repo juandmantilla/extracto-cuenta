@@ -1,4 +1,4 @@
-<!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
 <jasperReport name="resumen movimiento participes periodo" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="61211146-9a20-4312-947b-833782256310">
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
@@ -63,7 +63,7 @@
 		<element kind="rectangle" uuid="47bee413-b938-4b02-85b3-69cd2d2a6316" x="0" y="0" width="555" height="21" backcolor="#CCE2E9">
 			<pen lineColor="rgba(0, 0, 0, 0.0)"/>
 		</element>
-		<element kind="staticText" uuid="8e97beef-b1b4-459e-bc78-5e28fc6deff6" x="0" y="0" width="556" height="20" fontName="Arial" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+		<element kind="staticText" uuid="8e97beef-b1b4-459e-bc78-5e28fc6deff6" x="0" y="0" width="556" height="20" fontName="SansSerif" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 			<text><![CDATA[Resumen de Movimientos de los participes en el período]]></text>
 		</element>
 	</pageHeader>
@@ -101,28 +101,28 @@
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="staticText" uuid="127d499a-ce09-46a6-86bf-3412ccd3e546" x="0" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="127d499a-ce09-46a6-86bf-3412ccd3e546" x="0" y="0" width="69" height="20" fontName="SansSerif" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Cuenta Número]]></text>
 			</element>
-			<element kind="staticText" uuid="a4606e61-a39d-4772-81e2-fcc50661fa1f" x="69" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="a4606e61-a39d-4772-81e2-fcc50661fa1f" x="69" y="0" width="69" height="20" fontName="SansSerif" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Nombre Partícipe]]></text>
 			</element>
-			<element kind="staticText" uuid="c1e9a08b-43f6-4975-a946-7132e4c7dcff" x="138" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="c1e9a08b-43f6-4975-a946-7132e4c7dcff" x="138" y="0" width="69" height="20" fontName="SansSerif" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Objetivo]]></text>
 			</element>
-			<element kind="staticText" uuid="b05acea6-78ce-41bf-8563-a907e3f87257" x="208" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="b05acea6-78ce-41bf-8563-a907e3f87257" x="208" y="0" width="69" height="20" fontName="SansSerif" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Saldo Inicial]]></text>
 			</element>
-			<element kind="staticText" uuid="54147864-6623-409b-a0b5-822aaa1e0b33" x="278" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="54147864-6623-409b-a0b5-822aaa1e0b33" x="278" y="0" width="69" height="20" fontName="SansSerif" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Aportes]]></text>
 			</element>
-			<element kind="staticText" uuid="ee1504e4-b402-4719-ac6c-54bad0937bf5" x="348" y="0" width="69" height="20" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="ee1504e4-b402-4719-ac6c-54bad0937bf5" x="348" y="0" width="69" height="20" fontName="SansSerif" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Retiros]]></text>
 			</element>
-			<element kind="staticText" uuid="1b678e35-4ad6-42fe-b865-798d8affcc5a" x="417" y="0" width="69" height="20" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="1b678e35-4ad6-42fe-b865-798d8affcc5a" x="417" y="0" width="69" height="20" fontName="SansSerif" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Traslados entre Objetivos]]></text>
 			</element>
-			<element kind="staticText" uuid="7fadcc44-b39c-4252-b886-93829ed36063" x="486" y="0" width="69" height="20" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="7fadcc44-b39c-4252-b886-93829ed36063" x="486" y="0" width="69" height="20" fontName="SansSerif" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Saldo Final]]></text>
 			</element>
 		</element>
@@ -136,7 +136,7 @@
 					</datasetRun>
 					<column kind="single" uuid="5b0b99c7-6df2-4421-9958-ccf7aa6226fc" width="69">
 						<detailCell height="20" style="centrado seis">
-							<element kind="textField" uuid="4558ec6c-c845-4645-9d0a-ed973ebd2c8d" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Left" vTextAlign="Middle">
+							<element kind="textField" uuid="4558ec6c-c845-4645-9d0a-ed973ebd2c8d" x="0" y="0" width="69" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Left" vTextAlign="Middle">
 								<expression><![CDATA[$F{cuentaNumero}]]></expression>
 							</element>
 						</detailCell>
@@ -144,7 +144,7 @@
 					</column>
 					<column kind="single" uuid="a97eca9d-b30f-49c4-a454-4e0a71e122f0" width="69">
 						<detailCell height="20" style="nombre participe">
-							<element kind="textField" uuid="d1c268d1-ed80-41b0-9b86-994ad2cd6b3a" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Left" vTextAlign="Middle">
+							<element kind="textField" uuid="d1c268d1-ed80-41b0-9b86-994ad2cd6b3a" x="0" y="0" width="69" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Left" vTextAlign="Middle">
 								<expression><![CDATA[$F{nombreParticipe}]]></expression>
 							</element>
 						</detailCell>
@@ -152,7 +152,7 @@
 					</column>
 					<column kind="single" uuid="352e324d-b439-468f-a9c6-2f9b67d78c9b" width="70">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="17f39f86-3443-4e53-adde-239a570d6b5e" x="0" y="0" width="70" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="17f39f86-3443-4e53-adde-239a570d6b5e" x="0" y="0" width="70" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{objetivo}]]></expression>
 							</element>
 						</detailCell>
@@ -160,7 +160,7 @@
 					</column>
 					<column kind="single" uuid="eb1089b3-4ddd-4879-9c39-8f658936df60" width="70">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="cb013178-4751-4169-a922-a9712744a0d3" x="0" y="0" width="70" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="cb013178-4751-4169-a922-a9712744a0d3" x="0" y="0" width="70" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{saldoInicial}]]></expression>
 							</element>
 						</detailCell>
@@ -168,7 +168,7 @@
 					</column>
 					<column kind="single" uuid="804a6221-21a9-4f15-89c8-c859d6aa8906" width="70">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="d53378aa-0a06-4f75-8f9e-c49848307225" x="0" y="0" width="70" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="d53378aa-0a06-4f75-8f9e-c49848307225" x="0" y="0" width="70" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{aportes}]]></expression>
 							</element>
 						</detailCell>
@@ -176,7 +176,7 @@
 					</column>
 					<column kind="single" uuid="4edc76d9-66f5-44b8-ba17-92094a5d30d2" width="69">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="8ccdb169-385c-42fa-8e0d-3d03aafa1af2" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="8ccdb169-385c-42fa-8e0d-3d03aafa1af2" x="0" y="0" width="69" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{retiros}]]></expression>
 							</element>
 						</detailCell>
@@ -184,7 +184,7 @@
 					</column>
 					<column kind="single" uuid="d1229bec-6be4-41ce-9fb5-8e6c7be38893" width="69">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="996468bc-3bce-4440-8496-b5fc1e0a5acb" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="996468bc-3bce-4440-8496-b5fc1e0a5acb" x="0" y="0" width="69" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{trasladosObjetivos}]]></expression>
 							</element>
 						</detailCell>
@@ -192,7 +192,7 @@
 					</column>
 					<column kind="single" uuid="142b7a14-6643-4eff-aab1-27ffd8b2de5a" width="69">
 						<detailCell height="20" style="izquierda ">
-							<element kind="textField" uuid="bb7f1c2a-a738-4351-8b6c-b9196c29a0a6" x="0" y="0" width="69" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
+							<element kind="textField" uuid="bb7f1c2a-a738-4351-8b6c-b9196c29a0a6" x="0" y="0" width="69" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Center" vTextAlign="Middle">
 								<expression><![CDATA[$F{saldoFinal}]]></expression>
 							</element>
 						</detailCell>

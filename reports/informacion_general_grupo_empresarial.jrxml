@@ -1,4 +1,4 @@
-<!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
 <jasperReport name="informacion general grupo empresarial" language="java" columnCount="1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="371c48b8-8a65-4065-a717-7c5f4ab6801b">
 	<style name="Table_TH" mode="Opaque" backcolor="#C7E2E9">
 		<pen lineStyle="Solid" lineColor="#FFFFFF"/>
@@ -62,43 +62,43 @@
 	<pageHeader height="70">
 		<element kind="frame" uuid="95132c85-302c-4c7c-88fb-b03ba53b889d" x="0" y="0" width="554" height="20">
 			<property name="com.jaspersoft.studio.element.name" value="datos empresa"/>
-			<element kind="textField" uuid="3987efdb-b8fc-4d9f-bee9-2c5be803f0e2" x="0" y="0" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left">
+			<element kind="textField" uuid="3987efdb-b8fc-4d9f-bee9-2c5be803f0e2" x="0" y="0" width="80" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA["NIT /No. DE PLAN: "]]></expression>
 			</element>
-			<element kind="textField" uuid="e06a9df1-ccaa-4d07-9982-65ef913a5341" x="0" y="10" width="60" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left">
+			<element kind="textField" uuid="e06a9df1-ccaa-4d07-9982-65ef913a5341" x="0" y="10" width="60" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA["DIRECCIÓN: "]]></expression>
 			</element>
-			<element kind="textField" uuid="5b4a2e3b-36e6-4efd-b866-e1302d7ea947" x="310" y="0" width="120" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0">
+			<element kind="textField" uuid="5b4a2e3b-36e6-4efd-b866-e1302d7ea947" x="310" y="0" width="120" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA["ENTIDAD PATROCINADORA : "]]></expression>
 			</element>
-			<element kind="textField" uuid="c79f928e-618f-4824-b344-5144398394f5" x="310" y="10" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0">
+			<element kind="textField" uuid="c79f928e-618f-4824-b344-5144398394f5" x="310" y="10" width="80" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA["CIUDAD / DEPTO : "]]></expression>
 			</element>
-			<element kind="textField" uuid="568630ab-f660-4f32-a62a-107d46491ebe" x="180" y="0" width="20" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left">
+			<element kind="textField" uuid="568630ab-f660-4f32-a62a-107d46491ebe" x="180" y="0" width="20" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA["NIC: "]]></expression>
 			</element>
-			<element kind="textField" uuid="9fbd922d-888b-4dd3-8f21-0aec464bf413" x="80" y="0" width="70" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="9fbd922d-888b-4dd3-8f21-0aec464bf413" x="80" y="0" width="70" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA[$P{igge_nit_plan}]]></expression>
 			</element>
-			<element kind="textField" uuid="713dc683-2be7-4da0-9ccf-c98e58c7cac6" x="60" y="10" width="70" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="713dc683-2be7-4da0-9ccf-c98e58c7cac6" x="60" y="10" width="70" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA[$P{igge_direccion}]]></expression>
 			</element>
-			<element kind="textField" uuid="abe47a4a-dd77-4753-a5ff-df722d4ef17d" x="200" y="0" width="100" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="abe47a4a-dd77-4753-a5ff-df722d4ef17d" x="200" y="0" width="100" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA[$P{igge_nic}]]></expression>
 			</element>
-			<element kind="textField" uuid="3a1d5101-a392-4617-bc14-ace137cbcbea" x="430" y="0" width="124" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="3a1d5101-a392-4617-bc14-ace137cbcbea" x="430" y="0" width="124" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA[$P{igge_entidad_patrocinadora}]]></expression>
 			</element>
-			<element kind="textField" uuid="0b1fcb67-aa8d-44be-be18-766644cacebd" x="390" y="10" width="70" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left">
+			<element kind="textField" uuid="0b1fcb67-aa8d-44be-be18-766644cacebd" x="390" y="10" width="90" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left">
 				<paragraph lineSpacingSize="1.2"/>
 				<expression><![CDATA[$P{igge_ciudad_depto}]]></expression>
 			</element>
@@ -108,7 +108,7 @@
 			<element kind="rectangle" uuid="1a2c7e30-87a4-4db6-baa8-70415bf819a7" x="0" y="0" width="555" height="20" backcolor="#CCE3EA">
 				<pen lineColor="rgba(0, 0, 0, 0.0)"/>
 			</element>
-			<element kind="staticText" uuid="33cbfcb0-8440-4bea-b4f8-e03e964d1615" x="171" y="0" width="212" height="20" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="33cbfcb0-8440-4bea-b4f8-e03e964d1615" x="171" y="0" width="212" height="20" fontName="SansSerif" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Información General del Grupo Empresarial]]></text>
 			</element>
 		</element>
@@ -119,7 +119,7 @@
 			<element kind="rectangle" uuid="49e45f6b-0d16-4806-9f30-7b8c07a93bc1" x="280" y="0" width="275" height="20" backcolor="#DEEDF1">
 				<pen lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="staticText" uuid="58813216-3c24-46a2-9af7-835d567d9346" x="0" y="0" width="280" height="20" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="58813216-3c24-46a2-9af7-835d567d9346" x="0" y="0" width="280" height="20" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Codigo o Nit del Grupo Empresarial]]></text>
 				<box>
 					<pen lineColor="rgba(255, 255, 255, 0.0)"/>
@@ -129,7 +129,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 			</element>
-			<element kind="textField" uuid="e9135521-2565-49eb-a406-5dce00f3ee39" x="280" y="0" width="275" height="20" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="textField" uuid="e9135521-2565-49eb-a406-5dce00f3ee39" x="280" y="0" width="275" height="20" fontName="SansSerif" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<expression><![CDATA[$P{igge_nit_empresarial}]]></expression>
 				<box>
 					<pen lineColor="rgba(255, 255, 255, 0.0)"/>
@@ -177,31 +177,31 @@
 			<element kind="rectangle" uuid="a41ba779-9615-4bc3-9b7e-644b71814a87" x="493" y="0" width="62" height="21" backcolor="#C7E2E9">
 				<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="staticText" uuid="31fb149d-d101-4e20-8954-e536a91a90fb" x="0" y="0" width="62" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="31fb149d-d101-4e20-8954-e536a91a90fb" x="0" y="0" width="62" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Objetivos Plan Empresarial]]></text>
 			</element>
-			<element kind="staticText" uuid="6a5b159b-2308-47e0-a493-b6bd84f83a42" x="62" y="0" width="61" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="6a5b159b-2308-47e0-a493-b6bd84f83a42" x="62" y="0" width="61" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Saldo Anterior]]></text>
 			</element>
-			<element kind="staticText" uuid="212ceb29-42e8-4d84-8a3d-1093a17dc3d4" x="123" y="0" width="61" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="212ceb29-42e8-4d84-8a3d-1093a17dc3d4" x="123" y="0" width="61" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Aportes]]></text>
 			</element>
-			<element kind="staticText" uuid="4737c02f-0ba1-4e34-a10b-ddb28166c16d" x="184" y="0" width="62" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="4737c02f-0ba1-4e34-a10b-ddb28166c16d" x="184" y="0" width="62" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Retiros]]></text>
 			</element>
-			<element kind="staticText" uuid="d1da9297-8576-4f75-ae61-6ebfe1a9e30a" x="246" y="0" width="62" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="d1da9297-8576-4f75-ae61-6ebfe1a9e30a" x="246" y="0" width="62" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Traslados entre Objetivos]]></text>
 			</element>
-			<element kind="staticText" uuid="d12aa061-808c-4670-a956-9621908ed2f8" x="308" y="0" width="62" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="d12aa061-808c-4670-a956-9621908ed2f8" x="308" y="0" width="62" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Valorización]]></text>
 			</element>
-			<element kind="staticText" uuid="8929c319-e535-42c8-b0f4-8ddb88f63ca2" x="370" y="0" width="62" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="8929c319-e535-42c8-b0f4-8ddb88f63ca2" x="370" y="0" width="62" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Saldo Final]]></text>
 			</element>
-			<element kind="staticText" uuid="bfa86355-4006-4e1c-908b-d90611097f58" x="432" y="0" width="61" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="bfa86355-4006-4e1c-908b-d90611097f58" x="432" y="0" width="61" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Saldo Restringido]]></text>
 			</element>
-			<element kind="staticText" uuid="7b4035de-0aed-46c2-b83d-864c86398a1b" x="493" y="0" width="62" height="21" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="7b4035de-0aed-46c2-b83d-864c86398a1b" x="493" y="0" width="62" height="21" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Comisión Cobrada]]></text>
 			</element>
 		</element>
@@ -215,7 +215,7 @@
 					</datasetRun>
 					<column kind="single" uuid="1be3fa6a-1ed4-44bf-8957-12c72cd7808a" width="62">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="fbbd15ba-6f95-43eb-a061-d3f375bbf592" x="0" y="0" width="62" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="fbbd15ba-6f95-43eb-a061-d3f375bbf592" x="0" y="0" width="62" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{objetivoPlanEmpresarial}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -230,7 +230,7 @@
 					</column>
 					<column kind="single" uuid="0b36aab3-1065-4fc0-b30d-473ad6b861f9" width="61">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="0ce56261-50cf-4eea-98bb-380527a9ed58" x="0" y="0" width="61" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="0ce56261-50cf-4eea-98bb-380527a9ed58" x="0" y="0" width="61" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{saldoAnterior}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -244,7 +244,7 @@
 					</column>
 					<column kind="single" uuid="a59321a8-799b-4347-85d4-ea2b20a793ae" width="61">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="d8611e41-5824-4a37-9b63-2829e34e2121" x="0" y="0" width="61" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="d8611e41-5824-4a37-9b63-2829e34e2121" x="0" y="0" width="61" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{aportes}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -258,7 +258,7 @@
 					</column>
 					<column kind="single" uuid="0548f970-3136-409b-9552-e0f36811bda2" width="62">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="6d7e5001-a09e-4468-939c-6dbe72e844b9" x="0" y="0" width="62" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="6d7e5001-a09e-4468-939c-6dbe72e844b9" x="0" y="0" width="62" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{retiros}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -272,7 +272,7 @@
 					</column>
 					<column kind="single" uuid="22a7adff-a3d0-4564-ba91-2419832c0862" width="62">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="176dedd5-2763-4c37-84b0-ed1d10aaef2f" x="0" y="0" width="62" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="176dedd5-2763-4c37-84b0-ed1d10aaef2f" x="0" y="0" width="62" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{trasladoEntreObjetivos}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -286,7 +286,7 @@
 					</column>
 					<column kind="single" uuid="9da6d2e2-6bf4-4535-bfc5-50d6ba2885df" width="62">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="1bf13628-2d60-404b-9e2c-77bb5b9892c7" x="0" y="0" width="62" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="1bf13628-2d60-404b-9e2c-77bb5b9892c7" x="0" y="0" width="62" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{valorizacion}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -300,7 +300,7 @@
 					</column>
 					<column kind="single" uuid="755e5da6-c1cc-49bf-80b5-5d3a5a91a37c" width="62">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="577b02ee-7b76-42b7-965d-c6b88be7978f" x="0" y="0" width="62" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="577b02ee-7b76-42b7-965d-c6b88be7978f" x="0" y="0" width="62" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{saldoFinal}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -314,7 +314,7 @@
 					</column>
 					<column kind="single" uuid="7865ac99-6cdb-4990-97c1-7132ba44a61c" width="61">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="95ee0c51-9c68-4d13-851b-890cb7bf83f8" x="0" y="0" width="61" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="95ee0c51-9c68-4d13-851b-890cb7bf83f8" x="0" y="0" width="61" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{saldoRestringido}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -328,7 +328,7 @@
 					</column>
 					<column kind="single" uuid="fb8dc3f0-65e4-4fe9-93b6-a6a191a1fe3d" width="62">
 						<detailCell height="20" style="Table_TD">
-							<element kind="textField" uuid="e704d25e-13c4-43be-8e16-548096bde84d" x="0" y="0" width="62" height="20" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
+							<element kind="textField" uuid="e704d25e-13c4-43be-8e16-548096bde84d" x="0" y="0" width="62" height="20" fontName="SansSerif" fontSize="6.0" textAdjust="ScaleFont" hTextAlign="Right" vTextAlign="Middle">
 								<expression><![CDATA[$F{comisionCobrada}]]></expression>
 							</element>
 							<box style="Table_TD">
@@ -390,50 +390,50 @@
 			<element kind="rectangle" uuid="1239d9cd-a762-4395-8db6-ade915325e1d" mode="Opaque" x="0" y="10" width="310" height="10" backcolor="#DFEEF2">
 				<pen lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="textField" uuid="bda62840-ea96-4b94-866e-ace310da2d3f" mode="Transparent" x="63" y="0" width="61" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="bda62840-ea96-4b94-866e-ace310da2d3f" mode="Transparent" x="63" y="0" width="61" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_saldo_anterior}]]></expression>
 				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
 			</element>
-			<element kind="textField" uuid="63b4ee91-6a51-4336-a230-a6a3e73fe0b1" mode="Transparent" x="125" y="0" width="61" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="63b4ee91-6a51-4336-a230-a6a3e73fe0b1" mode="Transparent" x="125" y="0" width="61" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_aportes}]]></expression>
 			</element>
-			<element kind="textField" uuid="5b5520a7-fc5d-4a7c-a8a6-573eb923cf51" mode="Transparent" x="187" y="0" width="61" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="5b5520a7-fc5d-4a7c-a8a6-573eb923cf51" mode="Transparent" x="187" y="0" width="61" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_retiros}]]></expression>
 			</element>
-			<element kind="textField" uuid="36585dca-8d23-4afb-98e9-01d3a4f18a34" mode="Transparent" x="248" y="0" width="62" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="36585dca-8d23-4afb-98e9-01d3a4f18a34" mode="Transparent" x="248" y="0" width="62" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_traslados}]]></expression>
 			</element>
-			<element kind="textField" uuid="c9ea45dc-62bc-4597-aba5-f7bddade9d5c" mode="Transparent" x="310" y="0" width="62" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="c9ea45dc-62bc-4597-aba5-f7bddade9d5c" mode="Transparent" x="310" y="0" width="62" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_valorizacion}]]></expression>
 			</element>
-			<element kind="textField" uuid="194f4924-6381-4cc5-a106-8348feb2dec0" mode="Transparent" x="372" y="0" width="62" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="194f4924-6381-4cc5-a106-8348feb2dec0" mode="Transparent" x="372" y="0" width="62" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_saldo_final}]]></expression>
 			</element>
-			<element kind="textField" uuid="29c3fdda-eb77-42a4-892a-c819b8185cfe" mode="Transparent" x="434" y="0" width="62" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="29c3fdda-eb77-42a4-892a-c819b8185cfe" mode="Transparent" x="434" y="0" width="62" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_saldo_restringido}]]></expression>
 			</element>
-			<element kind="textField" uuid="439f08f0-9fd0-4f5b-9c1a-9cd09b24ec2b" mode="Transparent" x="496" y="0" width="59" height="10" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
+			<element kind="textField" uuid="439f08f0-9fd0-4f5b-9c1a-9cd09b24ec2b" mode="Transparent" x="496" y="0" width="59" height="10" fontName="SansSerif" fontSize="6.0" hTextAlign="Right" vTextAlign="Middle">
 				<paragraph rightIndent="3"/>
 				<expression><![CDATA[$P{igge_total_comision_cobrada}]]></expression>
 			</element>
-			<element kind="staticText" uuid="8f863c81-7fc8-4517-8fbd-d1071ff9b6df" mode="Transparent" x="0" y="0" width="62" height="10" fontSize="6.0" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="8f863c81-7fc8-4517-8fbd-d1071ff9b6df" mode="Transparent" x="0" y="0" width="62" height="10" fontName="SansSerif" fontSize="6.0" bold="false" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[Total]]></text>
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 			</element>
-			<element kind="staticText" uuid="28799404-e5dd-4fad-ab4b-5a0df484aca3" mode="Transparent" x="0" y="10" width="310" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="staticText" uuid="28799404-e5dd-4fad-ab4b-5a0df484aca3" mode="Transparent" x="0" y="10" width="310" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<text><![CDATA[No. de Partícipes]]></text>
 			</element>
 			<element kind="rectangle" uuid="1116fecc-20b1-4b77-9e64-82e22e07db81" mode="Opaque" x="310" y="10" width="245" height="10" backcolor="#DFEEF2">
 				<pen lineStyle="Solid" lineColor="#FFFFFF"/>
 			</element>
-			<element kind="textField" uuid="0579b67f-7d55-4de6-901a-2d760e7b1240" mode="Transparent" x="310" y="10" width="245" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<element kind="textField" uuid="0579b67f-7d55-4de6-901a-2d760e7b1240" mode="Transparent" x="310" y="10" width="245" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
 				<expression><![CDATA[$P{igge_numero_participes}]]></expression>
 			</element>
 		</element>

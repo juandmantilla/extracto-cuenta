@@ -12,10 +12,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IdeParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.IggeParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.MpaParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.paramsnames.RmpParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.IdeParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.IggeParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.MpaParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.ReeParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.RmpParamName.RMP_COLLECTION_TABLE;
+import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.RmpParamName.RMP_SUBREPORT;
 import static co.com.porvenir.extracto_empresarial.application.exceptions.response.messages.ReponseMessage.INTERNAL_SERVER_ERROR;
 
 @Slf4j
@@ -35,7 +37,7 @@ public class ExtractoEmpresarialReportHelper {
 
     private static Map<String, Object> buildReportParams(ExtractoEmpresarialReportDTO report) {
         var reportParameters = new HashMap<String, Object>();
-        
+
         buildGeneralParams(reportParameters, report);
         buildIggeParams(reportParameters, report);
         buildIdeParams(reportParameters, report);

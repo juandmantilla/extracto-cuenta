@@ -1,4 +1,4 @@
-<!-- Created with Jaspersoft Studio version 7.0.2.final using JasperReports Library version 7.0.2-31532122640f516c6d17238ae0e41a08113d5ac0  -->
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
 <jasperReport name="Reporte Extractos Empresariales" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9a0db263-5993-4f7d-88ec-3d4cdb7bffc2">
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
 	<parameter name="nit" class="java.lang.String"/>
@@ -59,7 +59,7 @@
 	<query language="sql"><![CDATA[]]></query>
 	<background splitType="Stretch"/>
 	<pageHeader height="110" splitType="Stretch">
-		<element kind="textField" uuid="140adeec-a596-4f93-a91c-2ab838a15afb" x="390" y="0" width="157" height="20" fontName="Arial" fontSize="8.0" hTextAlign="Right">
+		<element kind="textField" uuid="140adeec-a596-4f93-a91c-2ab838a15afb" x="390" y="0" width="157" height="20" fontName="SansSerif" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
 			<expression><![CDATA["Página " + $V{PAGE_NUMBER} + " de"]]></expression>
 		</element>
 		<element kind="rectangle" uuid="e1dfeb1b-928c-4068-a780-da5498f9e12e" x="0" y="20" width="554" height="90" backcolor="#DEEDF1">
@@ -126,18 +126,18 @@
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 		</element>
-		<element kind="staticText" uuid="9cdadd73-3692-49a4-b499-126b518e286e" x="80" y="30" width="199" height="39" forecolor="#333333" fontName="Arial" fontSize="16.0" bold="false" hTextAlign="Left">
+		<element kind="staticText" uuid="9cdadd73-3692-49a4-b499-126b518e286e" x="80" y="33" width="250" height="40" forecolor="#333333" fontName="SansSerif" fontSize="14.0" bold="false" hTextAlign="Left">
 			<paragraph lineSpacingSize="1.2"/>
 			<text><![CDATA[Extracto Plan Empresarial
 Porvenir Inversiones]]></text>
 		</element>
-		<element kind="staticText" uuid="07fc52b8-e7a3-49e5-9eff-756bc4727b69" x="79" y="74" width="200" height="25" forecolor="#339966" fontName="Arial" fontSize="8.0" bold="true" hTextAlign="Left">
+		<element kind="staticText" uuid="07fc52b8-e7a3-49e5-9eff-756bc4727b69" x="80" y="74" width="250" height="25" forecolor="#339966" fontName="SansSerif" fontSize="6.0" bold="true" hTextAlign="Left">
 			<paragraph lineSpacingSize="1.2"/>
 			<text><![CDATA[FONDO VOLUNTARIO DE PENSIÓN PORVENIR - PLAN
 EMPRESARIAL
 ]]></text>
 		</element>
-		<element kind="textField" uuid="0c0ad3b2-4a52-4867-99c7-823139efbbff" x="547" y="0" width="8" height="20" fontName="Arial" fontSize="8.0" evaluationTime="Report" hTextAlign="Right">
+		<element kind="textField" uuid="0c0ad3b2-4a52-4867-99c7-823139efbbff" x="547" y="0" width="8" height="20" fontName="SansSerif" fontSize="8.0" evaluationTime="Report" hTextAlign="Right" vTextAlign="Middle">
 			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
 			<property name="com.jaspersoft.studio.unit.width" value="px"/>
 		</element>
@@ -284,42 +284,42 @@ EMPRESARIAL
 		<element kind="rectangle" uuid="b3f54ec9-3177-430a-b834-a527df852e21" x="0" y="0" width="555" height="9" backcolor="#CCE3EA">
 			<pen lineColor="rgba(255, 255, 255, 0.0)"/>
 		</element>
-		<element kind="staticText" uuid="b2a927b4-ac62-437a-a8db-bf376858d971" x="0" y="0" width="80" height="10" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+		<element kind="staticText" uuid="b2a927b4-ac62-437a-a8db-bf376858d971" x="0" y="0" width="80" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 			<paragraph leftIndent="2" rightIndent="0"/>
 			<text><![CDATA[Datos del consultor]]></text>
 			<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
 			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
 		</element>
-		<element kind="staticText" uuid="25db14f3-6a72-4dd9-9d22-f433e2586999" x="0" y="50" width="554" height="60" fontSize="7.0" bold="true" hTextAlign="Justified" vTextAlign="Top">
+		<element kind="staticText" uuid="25db14f3-6a72-4dd9-9d22-f433e2586999" x="0" y="50" width="554" height="60" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Justified" vTextAlign="Top">
 			<text><![CDATA[Si tienes alguna duda sobre la información presentada en este documento, comunícate con nuestros canales de servicio.
 Cuenta con un Defensor del Consumidor Financiero, Dra. Ana María Giraldo Rincón ubicado en la carrera 11A No. 96 - 51 oficina 203 en Bogotá, Teléfono: 601 6108161, defensoriaporvenir@legalcrc.com, quien dará trámite a su queja de forma objetiva y gratuita.
 No permita que un tramitador le cobre dinero, puede hacer sus trámites en Porvenir sin costo. Si alguien le cobra, o tiene denuncias relacionadas con fraudes o ética de nuestros empleados, denúncielo ingresando a: www.porvenir.com.co/web/acerca-de-porvenir/linea-etica o comunicándose al teléfono en Bogotá 601 7434441 Ext. 77777.
 ]]></text>
 		</element>
 		<element kind="frame" uuid="69725dcc-f12e-4fe3-a44f-e56a7eab6de7" x="0" y="20" width="555" height="20">
-			<element kind="staticText" uuid="9ceb3b48-e4ed-4396-a88a-29a1f4083a09" x="0" y="0" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="staticText" uuid="9ceb3b48-e4ed-4396-a88a-29a1f4083a09" x="0" y="0" width="80" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Nombre:]]></text>
 			</element>
-			<element kind="staticText" uuid="dac64208-15ce-41ff-8011-bcd46b45af59" x="0" y="10" width="80" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="staticText" uuid="dac64208-15ce-41ff-8011-bcd46b45af59" x="0" y="10" width="80" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Ciudad:]]></text>
 			</element>
-			<element kind="staticText" uuid="952baf78-eab3-4b6f-9822-5b1bfeafe710" x="280" y="0" width="100" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="staticText" uuid="952baf78-eab3-4b6f-9822-5b1bfeafe710" x="280" y="0" width="100" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Celular o beeper:]]></text>
 			</element>
-			<element kind="staticText" uuid="575cd82d-63b5-4694-971d-05a33c837249" x="280" y="10" width="100" height="10" forecolor="#666666" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="staticText" uuid="575cd82d-63b5-4694-971d-05a33c837249" x="280" y="10" width="100" height="10" forecolor="#666666" fontName="SansSerif" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
 				<text><![CDATA[Correo Electrónico:]]></text>
 			</element>
-			<element kind="textField" uuid="6bd74d7f-d7f7-46ef-8df0-0897a80c88fa" x="80" y="0" width="200" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="6bd74d7f-d7f7-46ef-8df0-0897a80c88fa" x="80" y="0" width="200" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_nombre}]]></expression>
 			</element>
-			<element kind="textField" uuid="3a673438-5f29-4989-b39b-473b845ea07b" x="80" y="10" width="200" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="3a673438-5f29-4989-b39b-473b845ea07b" x="80" y="10" width="200" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_ciudad}]]></expression>
 			</element>
-			<element kind="textField" uuid="db85f182-cbd7-4789-8322-08b870a685ab" x="380" y="0" width="175" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="db85f182-cbd7-4789-8322-08b870a685ab" x="380" y="0" width="175" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_celular}]]></expression>
 			</element>
-			<element kind="textField" uuid="7fdcac0b-c7b2-437d-b115-922e841e22d2" x="380" y="10" width="175" height="10" fontName="Arial" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<element kind="textField" uuid="7fdcac0b-c7b2-437d-b115-922e841e22d2" x="380" y="10" width="175" height="10" fontName="SansSerif" fontSize="7.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
 				<expression><![CDATA[$P{consultor_email}]]></expression>
 			</element>
 		</element>
