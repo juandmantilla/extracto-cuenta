@@ -1,4 +1,4 @@
-package co.com.porvenir.extracto_empresarial.application.dto.models.params.names;
+package co.com.porvenir.extracto_empresarial.application.helpers.params;
 
 import lombok.Getter;
 

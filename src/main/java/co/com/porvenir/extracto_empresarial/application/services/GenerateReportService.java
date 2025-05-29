@@ -1,10 +1,10 @@
 package co.com.porvenir.extracto_empresarial.application.services;
 
 import co.com.porvenir.extracto_empresarial.adapters.in.web.dto.request.ExtractoEmpresarialRequestDto;
+import co.com.porvenir.extracto_empresarial.adapters.out.pdf.JasperReportsGeneratorAdapter;
 import co.com.porvenir.extracto_empresarial.application.dto.models.*;
 import co.com.porvenir.extracto_empresarial.application.helpers.ExtractoEmpresarialReportHelper;
 import co.com.porvenir.extracto_empresarial.application.ports.GenerateReportUseCase;
-import co.com.porvenir.extracto_empresarial.domain.ports.GenerateReportPort;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,6 @@ import java.util.List;
 public class GenerateReportService implements GenerateReportUseCase {
 
     private static final String REPORT_NAME = "Reporte_Extractos_Empresariales";
-    private final GenerateReportPort generatePdfReport;
 
     @Override
     public byte[] generateReport(ExtractoEmpresarialRequestDto request) {
@@ -220,7 +219,7 @@ public class GenerateReportService implements GenerateReportUseCase {
 
         var reportParamsFilled = ExtractoEmpresarialReportHelper.buildParametersReport(extracto);
 
-        return generatePdfReport.generateReport(REPORT_NAME, reportParamsFilled);
+        return JasperReportsGeneratorAdapter.generateReport(REPORT_NAME, reportParamsFilled);
     }
 
 }

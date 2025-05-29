@@ -12,13 +12,13 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.IdeParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.IggeParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.MpaParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.ReeParamName.*;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.RmpParamName.RMP_COLLECTION_TABLE;
-import static co.com.porvenir.extracto_empresarial.application.dto.models.params.names.RmpParamName.RMP_SUBREPORT;
 import static co.com.porvenir.extracto_empresarial.application.exceptions.response.messages.ReponseMessage.INTERNAL_SERVER_ERROR;
+import static co.com.porvenir.extracto_empresarial.application.helpers.params.IdeParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.helpers.params.IggeParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.helpers.params.MpaParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.helpers.params.ReeParamName.*;
+import static co.com.porvenir.extracto_empresarial.application.helpers.params.RmpParamName.RMP_COLLECTION_TABLE;
+import static co.com.porvenir.extracto_empresarial.application.helpers.params.RmpParamName.RMP_SUBREPORT;
 
 @Slf4j
 public class ExtractoEmpresarialReportHelper {

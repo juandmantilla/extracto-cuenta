@@ -2,7 +2,6 @@ package co.com.porvenir.extracto_empresarial.adapters.out.pdf;
 
 import co.com.porvenir.extracto_empresarial.application.exceptions.PorvenirException;
 import co.com.porvenir.extracto_empresarial.application.exceptions.response.messages.ReponseMessage;
-import co.com.porvenir.extracto_empresarial.domain.ports.GenerateReportPort;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.util.JRLoader;
@@ -14,10 +13,9 @@ import java.util.Map;
 
 @Slf4j
 @Component
-public class JasperReportsGeneratorAdapter implements GenerateReportPort {
-
-    @Override
-    public byte[] generateReport(String reportName, Map<String, Object> parameters) {
+public class JasperReportsGeneratorAdapter {
+    
+    public static byte[] generateReport(String reportName, Map<String, Object> parameters) {
 
         var reportBuilded = new ClassPathResource("reports/" + reportName + ".jasper");
 
