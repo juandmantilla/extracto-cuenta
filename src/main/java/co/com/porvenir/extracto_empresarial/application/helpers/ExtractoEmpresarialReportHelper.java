@@ -48,16 +48,10 @@ public class ExtractoEmpresarialReportHelper {
 
     private static void buildGeneralParams(Map<String, Object> params, ExtractoEmpresarialReportDTO report) {
 
-        params.put(NIT.getParamName(), report.getNit());
         params.put(PERIODO.getParamName(), report.getPeriodo());
         params.put(NUMERO_EXTRACTO.getParamName(), report.getNumeroExtracto());
         params.put(FECHA_EXPEDICION.getParamName(), report.getFechaExpedicion());
-        params.put(DIRECCION.getParamName(), report.getDireccion());
-        params.put(ENTIDAD_PATROCINADORA.getParamName(), report.getEntidadPatrocinadora());
-        params.put(CIUDAD_DEPTO.getParamName(), report.getCiudadDepto());
-        params.put(NIC.getParamName(), report.getNic());
-        params.put(NIT_EMPRESARIAL.getParamName(), report.getNitEmpresarial());
-        params.put(NIT_GRUPO_EMPRESARIAL.getParamName(), report.getNitGrupoEmpresarial());
+
         params.put(CONSULTOR_NOMBRE.getParamName(), report.getConsultorNombre());
         params.put(CONSULTOR_CIUDAD.getParamName(), report.getConsultorCiudad());
         params.put(CONSULTOR_CELULAR.getParamName(), report.getConsultorCelular());
@@ -68,7 +62,15 @@ public class ExtractoEmpresarialReportHelper {
 
         var jasperSubreport = getSubreport(IGGE_SUBREPORT_NAME);
 
-        params.put(IGGE_NIT_EMPRESARIAL.getParamName(), report.getNitEmpresarial());
+
+        params.put(IGGE_NIT_PLAN.getParamName(), report.getIggeNitPlan());
+        params.put(IGGE_DIRECCION.getParamName(), report.getIggeDireccion());
+        params.put(IGGE_NIC.getParamName(), report.getIggeNic());
+        params.put(IGGE_ENTIDAD_PATROCINADORA.getParamName(), report.getIggeEntidadPatrocinadora());
+        params.put(IGGE_CIUDAD_DEPTO.getParamName(), report.getIggeCiudadDepto());
+
+        params.put(IGGE_NIT_EMPRESARIAL.getParamName(), report.getIggeNitEmpresarial());
+        
         params.put(IGGE_TOTAL_SALDO_ANTERIOR.getParamName(), report.getIggeTotalSaldoAnterior());
         params.put(IGGE_TOTAL_APORTES.getParamName(), report.getIggeTotalAportes());
         params.put(IGGE_TOTAL_RETIROS.getParamName(), report.getIggeTotalRetiros());
@@ -78,11 +80,7 @@ public class ExtractoEmpresarialReportHelper {
         params.put(IGGE_TOTAL_SALDO_RESTRINGIDO.getParamName(), report.getIggeTotalSaldoRestringido());
         params.put(IGGE_TOTAL_COMISION_COBRADA.getParamName(), report.getIggeTotalComisionCobrada());
         params.put(IGGE_NUMERO_PARTICIPES.getParamName(), report.getIggeNumeroParticipes());
-        params.put(IGGE_NIT_PLAN.getParamName(), report.getIggeNitPlan());
-        params.put(IGGE_NIC.getParamName(), report.getNic());
-        params.put(IGGE_ENTIDAD_PATROCINADORA.getParamName(), report.getIggeEntidadPatrocinadora());
-        params.put(IGGE_CIUDAD_DEPTO.getParamName(), report.getIggeCiudadDepto());
-        params.put(IGGE_DIRECCION.getParamName(), report.getIggeDireccion());
+
         params.put(IGGE_SUBREPORT.getParamName(), jasperSubreport);
         params.put(IGGE_COLLECTION_TABLE.getParamName(), report.getIggeTable());
     }

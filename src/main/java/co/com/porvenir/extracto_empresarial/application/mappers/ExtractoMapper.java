@@ -16,15 +16,26 @@ public class ExtractoMapper {
         buildIggeParams(extractoMapped, extracto);
         buildIdeParams(extractoMapped, extracto);
         buildMpaParams(extractoMapped, extracto);
+        buildRmpTable(extractoMapped, extracto);
+        buildFooterParams(extractoMapped, extracto);
 
         return extractoMapped;
-
     }
 
     private static void buildHeadParams(ExtractoEmpresarialReportDTO extractoMapped, Extracto extracto) {
         extractoMapped.setPeriodo(extracto.getEncabezadoPag().getPeriodo().getFechaInicial());
         extractoMapped.setNumeroExtracto(extracto.getEncabezadoPag().getConsecutivo());
         extractoMapped.setFechaExpedicion(extracto.getEncabezadoPag().getFechaEmision());
+    }
+
+    private static void buildFooterParams(ExtractoEmpresarialReportDTO extractoMapped, Extracto extracto) {
+
+        var footer = extracto.getPie();
+
+        extractoMapped.setConsultorNombre(footer.getConsultorAsignado());
+        extractoMapped.setConsultorCiudad(footer.getCiudad());
+        extractoMapped.setConsultorCelular(footer.getCelularConsultor());
+        extractoMapped.setConsultorEmail(footer.getCorreoConsultor());
     }
 
     private static void buildIggeParams(ExtractoEmpresarialReportDTO extractoMapped, Extracto extracto) {
@@ -37,7 +48,7 @@ public class ExtractoMapper {
         extractoMapped.setIggeNitEmpresarial(extracto.getEncabezado().getNit());
         extractoMapped.setIggeTable(buildIggeList(extracto));
 
-        buildIggTotalTable(extractoMapped, extracto);
+        buildIggeTotalTable(extractoMapped, extracto);
     }
 
     private static List<IggeTableDTO> buildIggeList(Extracto extracto) {
@@ -64,7 +75,7 @@ public class ExtractoMapper {
         return listTable;
     }
 
-    private static void buildIggTotalTable(ExtractoEmpresarialReportDTO extractoMapper, Extracto extracto) {
+    private static void buildIggeTotalTable(ExtractoEmpresarialReportDTO extractoMapper, Extracto extracto) {
 
         var infEmpresarial = extracto.getInformacionGrupoEmpresarial();
         var totalAlternativas = infEmpresarial.getAlternativasGrupoEmpre().getAlternativas().getTotalAlternativas();
@@ -145,7 +156,9 @@ public class ExtractoMapper {
         extractoMapper.setMpaNit(montoProcAcr.getNit());
         extractoMapper.setMpaMontoProceso(montoProcAcr.getMontoEnProceso());
         extractoMapper.setMpaNitTotal(totalMontos.getNit());
-        extractoMapper.setMpaMontoProceso(totalMontos.getMontoEnProceso());
+        extractoMapper.setMpaTotalMontoProceso(totalMontos.getMontoEnProceso());
+        extractoMapper.setMpaNombrePlanEmpresarial(extracto.getEncabezado().getRazonSocial());
+
         extractoMapper.setMpaTable(buildMpaTable(detalleCondicionList));
     }
 
@@ -172,7 +185,7 @@ public class ExtractoMapper {
             mpaElement.setRealizaAporte(realizaAporte.getRealizaAporteAfiliado());
             mpaElement.setAporteTieneCondicion(aporCondicion.getCondicionAporteAfiliado());
             mpaElement.setMontAporteTipoValor(tipoValor.getMontoAporteTipoValAfiliado());
-            mpaElement.setMontAporteTipoValor(tipoValor.getMontoAporteValorAfiliado());
+            mpaElement.setMontAporteValor(tipoValor.getMontoAporteValorAfiliado());
             mpaElement.setPeriodicidad(periodicidad.getPeriocidadAporteAfiliado());
             mpaElement.setPermiteRetiros(permiteRetiros.getPermiteRetiroAporteAfiliado());
             mpaElement.setReqAutorizacionRetiros(reqAuto.getRequiereAutorizacionAfiliado());

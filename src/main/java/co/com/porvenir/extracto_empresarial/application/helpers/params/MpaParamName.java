@@ -13,9 +13,7 @@ public enum MpaParamName {
     MPA_NOMBRE_PLAN_EMPRESARIAL("mpa_nombre_plan_empresarial"),
     MPA_COLLECTION_TABLE("mpa_collection_table"),
 
-    MPA_SUBREPORT("mpa_subreport"),
-    MPA_DATA_SOURCE("mpa_data_source"),
-    MPA_PARAMS("mpa_subreport_parameters");
+    MPA_SUBREPORT("mpa_subreport");
 
     private final String paramName;
 
