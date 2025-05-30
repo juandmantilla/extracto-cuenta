@@ -123,6 +123,8 @@
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
+
+                        <exclude>**/application/dto/*</exclude>
                     </excludes>
                 </configuration>
             </plugin>
