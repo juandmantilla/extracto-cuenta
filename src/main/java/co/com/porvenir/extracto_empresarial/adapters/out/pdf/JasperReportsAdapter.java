@@ -18,7 +18,6 @@ import static co.com.porvenir.extracto_empresarial.application.exceptions.respon
 @Component
 public class JasperReportsAdapter implements JasperReportPort {
 
-    
     public byte[] generateReport(String reportName, Map<String, Object> parameters) {
 
         var reportBuilded = new ClassPathResource("reports/" + reportName + ".jasper");

@@ -3,11 +3,10 @@ package co.com.porvenir.extracto_empresarial.application.helpers;
 import co.com.porvenir.extracto_empresarial.application.dto.models.*;
 import co.com.porvenir.extracto_empresarial.application.ports.JasperReportPort;
 import net.sf.jasperreports.engine.JasperReport;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
@@ -19,16 +18,12 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class ExtractoEmpresarialReportHelperTest {
+
     @Mock
     private JasperReportPort jasperReportPort;
 
+    @InjectMocks
     private ExtractoEmpresarialReportHelper helper;
-
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
-        helper = new ExtractoEmpresarialReportHelper(jasperReportPort);
-    }
 
     @Test
     void testBuildParametersReport_shouldReturnExpectedMap() {

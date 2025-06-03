@@ -9,5 +9,4 @@ public class ExtractoEmpresarialResponseDto {
 
     private StatusDto status;
     private DataDto dataUrl;
-
 }
