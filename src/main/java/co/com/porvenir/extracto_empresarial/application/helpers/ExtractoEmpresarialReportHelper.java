@@ -4,6 +4,7 @@ import co.com.porvenir.extracto_empresarial.application.dto.models.ExtractoEmpre
 import co.com.porvenir.extracto_empresarial.application.ports.JasperReportPort;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +18,7 @@ import static co.com.porvenir.extracto_empresarial.application.helpers.params.Rm
 
 @Slf4j
 @RequiredArgsConstructor
+@Component
 public class ExtractoEmpresarialReportHelper {
 
     private static final String IGGE_SUBREPORT_NAME = "informacion_general_grupo_empresarial";
@@ -25,7 +27,7 @@ public class ExtractoEmpresarialReportHelper {
     private static final String RMP_SUBREPORT_NAME = "resumen_movimiento_participes_periodo";
 
     private final JasperReportPort jasperPort;
-    
+
     public Map<String, Object> buildParametersReport(ExtractoEmpresarialReportDTO report) {
         return buildReportParams(report);
     }
