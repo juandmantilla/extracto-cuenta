@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -17,14 +18,18 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.Duration;
+import java.time.Instant;
+
 @RestController
 @RequestMapping("/extractoEmpresarial")
 @RequiredArgsConstructor
 @Tag(name = "Extracto Cuenta Plan Empresarial - Porvenir", description = "Generación del reporte del Extracto de Plan Empresarial.")
+@Slf4j
 public class ExtractoEmpresarialController {
 
     private final GenerateReportUseCase reportService;
-    
+
     @PostMapping("/generarReporte")
     @Operation(
             summary = "Genera el reporte de extracto de plan empresarial",
@@ -37,7 +42,14 @@ public class ExtractoEmpresarialController {
     })
     public ResponseEntity<byte[]> generarExtractoEmpresarial(@RequestBody @NonNull ExtractoRequestDTO request) {
 
+        var start = Instant.now();
         var pdfGenerated = reportService.generateReport(request);
+        var finish = Instant.now();
+
+        var duration = Duration.between(start, finish);
+
+        log.info("*** The execution time for the PDF Generations was : {} ", duration.toMillis());
+
 
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=reporte.pdf")
